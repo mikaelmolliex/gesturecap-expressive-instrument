@@ -2,7 +2,7 @@
     "name": "gesturecap-osc-mapping",
     "version": 1,
     "creationdate": 3862820256,
-    "modificationdate": 3863168274,
+    "modificationdate": 3863530764,
     "viewrect": [ 25.0, 114.0, 300.0, 500.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -13,7 +13,8 @@
             "gesturecap-osc-mapping.maxpat": {
                 "kind": "patcher",
                 "local": 1,
-                "toplevel": 1
+                "toplevel": 1,
+                "disclosed": 0
             }
         },
         "media": {        },
