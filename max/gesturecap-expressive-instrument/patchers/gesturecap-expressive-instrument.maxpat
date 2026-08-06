@@ -9,11 +9,223 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 95.0, 1444.0, 853.0 ],
+        "rect": [ 151.0, 153.0, 1209.0, 736.0 ],
         "openinpresentation": 1,
         "enablehscroll": 0,
         "enablevscroll": 0,
         "boxes": [
+            {
+                "box": {
+                    "bgcolor": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
+                    "bgcolor2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
+                    "bgfillcolor_angle": 270.0,
+                    "bgfillcolor_autogradient": 0.0,
+                    "bgfillcolor_color": [ 0.0, 0.0, 0.0, 0.0 ],
+                    "bgfillcolor_color1": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
+                    "bgfillcolor_color2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 1.0 ],
+                    "bgfillcolor_proportion": 0.5,
+                    "bgfillcolor_type": "color",
+                    "gradient": 1,
+                    "id": "obj-561",
+                    "ignoreclick": 1,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2333.3333110809326, 1791.2280530929565, 210.3896083831787, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 725.0, 28.0, 103.83275508880615, 22.0 ],
+                    "text": "Init Preset",
+                    "textcolor": [ 0.5098535418510437, 0.5883432626724243, 1.0, 0.7 ],
+                    "varname": "UI_Preset_SlotMode"
+                }
+            },
+            {
+                "box": {
+                    "active1": [ 0.365, 0.42, 0.886, 1.0 ],
+                    "bgcolor": [ 0.176, 0.176, 0.176, 0.0 ],
+                    "bubblesize": 24,
+                    "emptycolor": [ 0.212, 0.212, 0.212, 1.0 ],
+                    "fontsize": 16.0,
+                    "id": "obj-93",
+                    "maxclass": "preset",
+                    "numinlets": 1,
+                    "numoutlets": 5,
+                    "outlettype": [ "preset", "int", "preset", "int", "" ],
+                    "patching_rect": [ 2576.315764904022, 1645.614019393921, 213.15789270401, 36.8421049118042 ],
+                    "pattrstorage": "presetPattrstorageGestCap",
+                    "presentation": 1,
+                    "presentation_rect": [ 609.366168, 48.0, 350.0, 28.0 ],
+                    "stored1": [ 0.31, 0.357, 0.608, 0.702 ],
+                    "textcolor": [ 0.2, 0.2, 0.2, 0.0 ],
+                    "varname": "SlotUIGestCap"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
+                    "activebgoncolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
+                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
+                    "annotation": "",
+                    "bgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
+                    "bgoncolor": [ 0.615686274509804, 0.615686274509804, 0.615686274509804, 0.0 ],
+                    "bordercolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
+                    "hint": "",
+                    "id": "obj-290",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 2772.413938522339, 1430.8161667585373, 56.833300054073334, 29.33333420753479 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 954.024413, 48.504424, 51.769916, 26.991153 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "activebgoncolor": {
+                            "expression": ""
+                        },
+                        "activetextcolor": {
+                            "expression": ""
+                        },
+                        "bgcolor": {
+                            "expression": ""
+                        },
+                        "bgoncolor": {
+                            "expression": ""
+                        },
+                        "bordercolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_linknames": 1,
+                            "parameter_longname": "ClearButton",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "ClearButton",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "Clear",
+                    "transition": 1,
+                    "valuepopuplabel": 1,
+                    "varname": "ClearButton"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
+                    "activebgoncolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
+                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
+                    "annotation": "",
+                    "bgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
+                    "bgoncolor": [ 0.615686274509804, 0.615686274509804, 0.615686274509804, 0.0 ],
+                    "bordercolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
+                    "hint": "",
+                    "id": "obj-330",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 2672.41393327713, 1434.4828338623047, 56.833300054073334, 29.33333420753479 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 1013.7805116176605, 48.504423692822456, 51.76991567015648, 26.991152614355087 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "activebgoncolor": {
+                            "expression": ""
+                        },
+                        "activetextcolor": {
+                            "expression": ""
+                        },
+                        "bgcolor": {
+                            "expression": ""
+                        },
+                        "bgoncolor": {
+                            "expression": ""
+                        },
+                        "bordercolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_linknames": 1,
+                            "parameter_longname": "ClearAllButton",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "ClearAllButton",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "Reset",
+                    "transition": 1,
+                    "valuepopuplabel": 1,
+                    "varname": "ClearAllButton"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
+                    "activebgoncolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
+                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
+                    "annotation": "",
+                    "bgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
+                    "bgoncolor": [ 0.615686274509804, 0.615686274509804, 0.615686274509804, 0.0 ],
+                    "bordercolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
+                    "hint": "",
+                    "id": "obj-559",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 2534.482891559601, 1416.0000422000885, 56.833300054073334, 29.33333420753479 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 545.7692813873291, 48.504423692822456, 51.76991567015648, 26.991152614355087 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "activebgoncolor": {
+                            "expression": ""
+                        },
+                        "activetextcolor": {
+                            "expression": ""
+                        },
+                        "bgcolor": {
+                            "expression": ""
+                        },
+                        "bgoncolor": {
+                            "expression": ""
+                        },
+                        "bordercolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_linknames": 1,
+                            "parameter_longname": "AddButton",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "AddButton",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "Add",
+                    "transition": 1,
+                    "valuepopuplabel": 1,
+                    "varname": "AddButton"
+                }
+            },
             {
                 "box": {
                     "activebgcolor": [ 0.7372549019607844, 0.7372549019607844, 0.7372549019607844, 0.0 ],
@@ -87,324 +299,6 @@
             },
             {
                 "box": {
-                    "align": 1,
-                    "allowdrag": 0,
-                    "applycolors": 1,
-                    "arrow": 0,
-                    "autopopulate": 1,
-                    "bgcolor": [ 0.0, 0.0, 0.0, 1.0 ],
-                    "bgfillcolor_angle": 270.0,
-                    "bgfillcolor_autogradient": 0.0,
-                    "bgfillcolor_color": [ 0.0, 0.0, 0.0, 1.0 ],
-                    "bgfillcolor_color1": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
-                    "bgfillcolor_color2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 1.0 ],
-                    "bgfillcolor_proportion": 0.5,
-                    "bgfillcolor_type": "color",
-                    "color": [ 0.35294117647058826, 0.40784313725490196, 0.6941176470588235, 0.37 ],
-                    "fontface": 0,
-                    "fontsize": 24.0,
-                    "id": "obj-396",
-                    "items": [ "Algorithmic", "Dust", ",", "Controller", "Grainscape", ",", "Formant", "Cloud", ",", "Gesture", "Bloom", ",", "Haptic", "Flux", ",", "Init", "Gamepad", ",", "Init", "Landmarks", ",", "Init", "Preset", ",", "Kinetic", "Shards", ",", "Landmark", "Echoes", ",", "Motion", "Weaver", ",", "Neural", "Drift", ",", "Synapse", "Scatter" ],
-                    "maxclass": "umenu",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "int", "", "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 1086.2069535255432, 1244.827651500702, 251.0, 35.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 640.3561545461416, 44.05172657966614, 261.28769090771675, 35.0 ],
-                    "textcolor": [ 0.36470588235294116, 0.4196078431372549, 0.8862745098039215, 1.0 ],
-                    "textjustification": 1,
-                    "truncate": 0,
-                    "types": "JSON",
-                    "varname": "MenuPresetFiles"
-                }
-            },
-            {
-                "box": {
-                    "applycolors": 1,
-                    "arrow": 0,
-                    "bgcolor": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
-                    "bgfillcolor_angle": 270.0,
-                    "bgfillcolor_autogradient": 0.0,
-                    "bgfillcolor_color": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
-                    "bgfillcolor_color1": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
-                    "bgfillcolor_color2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 1.0 ],
-                    "bgfillcolor_proportion": 0.5,
-                    "bgfillcolor_type": "color",
-                    "color": [ 0.290283203125, 0.290283203125, 0.290283203125, 1.0 ],
-                    "fontsize": 12.0,
-                    "id": "obj-397",
-                    "items": [ "<none>", ",", "Save", ",", "Save", "As", ",", "Save", "With", "Files", "(Disabled)", ",", "Export", "Preset", "(Disabled)" ],
-                    "maxclass": "umenu",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "int", "", "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 2262.0690841674805, 882.7586669921875, 82.0, 22.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 999.5360273122787, 50.55172657966614, 35.0, 22.0 ],
-                    "textcolor": [ 0.6078431372549019, 0.6078431372549019, 0.6078431372549019, 1.0 ],
-                    "varname": "SaveMenu"
-                }
-            },
-            {
-                "box": {
-                    "activebgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
-                    "activebgoncolor": [ 0.9019607843137255, 0.6509803921568628, 0.050980392156862744, 0.0 ],
-                    "activetextcolor": [ 0.8590264320373535, 0.8664560914039612, 0.8469980359077454, 1.0 ],
-                    "bgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
-                    "bordercolor": [ 0.11764705882352941, 0.11764705882352941, 0.11764705882352941, 0.0 ],
-                    "focusbordercolor": [ 0.5058823529411764, 0.5058823529411764, 0.5058823529411764, 0.0 ],
-                    "hint": "",
-                    "id": "obj-522",
-                    "maxclass": "live.text",
-                    "mode": 0,
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 2262.0690841674805, 844.827630519867, 80.0, 37.0 ],
-                    "pictures": [ "floppy-disk-arrow-in.svg", "<none>" ],
-                    "presentation": 1,
-                    "presentation_rect": [ 999.5360273122787, 45.39708769321442, 35.0, 33.0 ],
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "activebgoncolor": {
-                            "expression": ""
-                        },
-                        "activetextcolor": {
-                            "expression": ""
-                        },
-                        "bgcolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "focusbordercolor": {
-                            "expression": ""
-                        },
-                        "textoffcolor": {
-                            "expression": ""
-                        },
-                        "valueof": {
-                            "parameter_enum": [ "val1", "val2" ],
-                            "parameter_longname": "live.text[3]",
-                            "parameter_mmax": 1,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "live.text",
-                            "parameter_type": 2
-                        }
-                    },
-                    "text": "Routing Matrix",
-                    "textoffcolor": [ 0.8824790716171265, 0.5881627798080444, 0.008070582523941994, 1.0 ],
-                    "usepicture": 1,
-                    "varname": "SaveModeButton"
-                }
-            },
-            {
-                "box": {
-                    "activebgcolor": [ 0.647059, 0.647059, 0.647059, 0.0 ],
-                    "activebgoncolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
-                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
-                    "activetextoncolor": [ 0.124064905296827, 0.124064860727621, 0.124064872278807, 1.0 ],
-                    "bgcolor": [ 0.647059, 0.647059, 0.647059, 0.0 ],
-                    "bgoncolor": [ 0.764706, 0.764706, 0.764706, 0.0 ],
-                    "bordercolor": [ 0.313725, 0.313725, 0.313725, 0.0 ],
-                    "focusbordercolor": [ 0.313725, 0.313725, 0.313725, 0.0 ],
-                    "fontsize": 36.0,
-                    "id": "obj-398",
-                    "maxclass": "live.text",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 1168.9655785560608, 944.8276357650757, 22.0, 15.0 ],
-                    "pictures": [ "nav-arrow-right-solid.svg", "nav-arrow-right-solid.svg" ],
-                    "presentation": 1,
-                    "presentation_rect": [ 571.9231300354004, 47.307695388793945, 35.44303750991821, 29.11392366886139 ],
-                    "remapsvgcolors": 1,
-                    "rounded": 10.0,
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "activebgoncolor": {
-                            "expression": ""
-                        },
-                        "activetextcolor": {
-                            "expression": ""
-                        },
-                        "activetextoncolor": {
-                            "expression": ""
-                        },
-                        "bgcolor": {
-                            "expression": ""
-                        },
-                        "bgoncolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "focusbordercolor": {
-                            "expression": ""
-                        },
-                        "textcolor": {
-                            "expression": ""
-                        },
-                        "textoffcolor": {
-                            "expression": ""
-                        },
-                        "valueof": {
-                            "parameter_enum": [ "val1", "val2" ],
-                            "parameter_invisible": 2,
-                            "parameter_linknames": 1,
-                            "parameter_longname": "ArrowDownButton",
-                            "parameter_mmax": 1,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "ArrowDownButton",
-                            "parameter_type": 2
-                        }
-                    },
-                    "text": ">",
-                    "textcolor": [ 0.0, 0.0, 0.0, 0.0 ],
-                    "textoffcolor": [ 1.0, 0.725490196078431, 0.003921568627451, 1.0 ],
-                    "texton": ">",
-                    "usepicture": 1,
-                    "varname": "ArrowDownButton"
-                }
-            },
-            {
-                "box": {
-                    "activebgcolor": [ 0.647059, 0.647059, 0.647059, 0.0 ],
-                    "activebgoncolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
-                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
-                    "activetextoncolor": [ 0.124064905296827, 0.124064860727621, 0.124064872278807, 1.0 ],
-                    "bgcolor": [ 0.647059, 0.647059, 0.647059, 0.0 ],
-                    "bgoncolor": [ 0.764706, 0.764706, 0.764706, 0.0 ],
-                    "bordercolor": [ 0.313725, 0.313725, 0.313725, 0.0 ],
-                    "focusbordercolor": [ 0.313725, 0.313725, 0.313725, 0.0 ],
-                    "fontsize": 36.0,
-                    "id": "obj-399",
-                    "maxclass": "live.text",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 1134.4828181266785, 944.8276357650757, 22.0, 15.0 ],
-                    "pictures": [ "nav-arrow-left-solid.svg", "nav-arrow-left-solid.svg" ],
-                    "presentation": 1,
-                    "presentation_rect": [ 545.7692813873291, 47.307695388793945, 35.44303750991821, 29.11392366886139 ],
-                    "remapsvgcolors": 1,
-                    "rounded": 10.0,
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "activebgoncolor": {
-                            "expression": ""
-                        },
-                        "activetextcolor": {
-                            "expression": ""
-                        },
-                        "activetextoncolor": {
-                            "expression": ""
-                        },
-                        "bgcolor": {
-                            "expression": ""
-                        },
-                        "bgoncolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "focusbordercolor": {
-                            "expression": ""
-                        },
-                        "textcolor": {
-                            "expression": ""
-                        },
-                        "textoffcolor": {
-                            "expression": ""
-                        },
-                        "valueof": {
-                            "parameter_enum": [ "val1", "val2" ],
-                            "parameter_invisible": 2,
-                            "parameter_linknames": 1,
-                            "parameter_longname": "ArrowUpButton",
-                            "parameter_mmax": 1,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "ArrowUpButton",
-                            "parameter_type": 2
-                        }
-                    },
-                    "text": "<",
-                    "textcolor": [ 1.0, 0.725490196078431, 0.003921568627451, 1.0 ],
-                    "textoffcolor": [ 1.0, 0.725490196078431, 0.003921568627451, 1.0 ],
-                    "texton": "<",
-                    "usepicture": 1,
-                    "varname": "ArrowUpButton"
-                }
-            },
-            {
-                "box": {
-                    "bgcolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 0.0 ],
-                    "fontsize": 36.0,
-                    "id": "obj-257",
-                    "ignoreclick": 1,
-                    "maxclass": "textbutton",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 951.7241878509521, 868.9655628204346, 43.52331590652466, 34.715025782585144 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 926.3401551246643, 44.36615991592407, 43.52331590652466, 34.715025782585144 ],
-                    "rounded": 240.0,
-                    "text": "+",
-                    "textcolor": [ 0.8392156862745098, 0.9450980392156862, 0.6549019607843137, 1.0 ],
-                    "texton": "+",
-                    "textoncolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
-                    "textovercolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
-                    "usetextovercolor": 1,
-                    "varname": "ImportButton"
-                }
-            },
-            {
-                "box": {
-                    "applycolors": 1,
-                    "arrow": 0,
-                    "bgcolor": [ 0.8901960784313725, 0.16470588235294117, 0.16470588235294117, 0.0 ],
-                    "bgfillcolor_angle": 270.0,
-                    "bgfillcolor_autogradient": 0.0,
-                    "bgfillcolor_color": [ 0.8901960784313725, 0.16470588235294117, 0.16470588235294117, 0.0 ],
-                    "bgfillcolor_color1": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
-                    "bgfillcolor_color2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 1.0 ],
-                    "bgfillcolor_proportion": 0.5,
-                    "bgfillcolor_type": "color",
-                    "color": [ 0.290283203125, 0.290283203125, 0.290283203125, 1.0 ],
-                    "fontsize": 12.0,
-                    "id": "obj-226",
-                    "items": [ "<none>", ",", "Factory", "Presets", "(Default)", ",", "<separator>", ",", "Drop", "File/Folder", ",", "<separator>", ",", "Open", "Preset", "File", ",", "Open", "Preset", "Folder" ],
-                    "maxclass": "umenu",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "int", "", "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 951.7241878509521, 917.2414274215698, 44.726782619953156, 22.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 926.3401551246643, 50.55172657966614, 44.726782619953156, 22.0 ],
-                    "textcolor": [ 0.6078431372549019, 0.6078431372549019, 0.6078431372549019, 1.0 ],
-                    "varname": "ImportPresetMenu"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-299",
                     "linecount": 2,
                     "maxclass": "message",
@@ -412,7 +306,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1284.0, 1576.0, 50.0, 35.0 ],
-                    "text": "Neural Drift"
+                    "text": "Init Preset"
                 }
             },
             {
@@ -423,7 +317,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1195.906380712986, 1359.6490636467934, 50.0, 22.0 ],
-                    "text": "prev"
+                    "text": "7"
                 }
             },
             {
@@ -5485,7 +5379,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1106.8966097831726, 1317.2414484024048, 50.0, 22.0 ],
-                    "text": "11"
+                    "text": "7"
                 }
             },
             {
@@ -8757,7 +8651,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 2631.0346207618713, 1196.5517868995667, 388.54165184497833, 22.0 ],
-                    "text": "write \"Neural Drift.json\""
+                    "text": "write \"Algorithmic Dust.json\""
                 }
             },
             {
@@ -8768,6 +8662,151 @@
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
                     "patching_rect": [ 3012.903247356415, 1286.2069640159607, 56.0, 22.0 ],
+                    "restore": {
+                        "AddButton": [ 0.0 ],
+                        "Amp_Eg_Attack": [ 0.0 ],
+                        "Amp_Eg_Decay": [ 0.0 ],
+                        "Amp_Eg_Release": [ 0.0 ],
+                        "Amp_Eg_Sustain": [ 0.0 ],
+                        "ArrowDownButton": [ 0.0 ],
+                        "ArrowUpButton": [ 0.0 ],
+                        "Brightness": [ 0 ],
+                        "ClearAllButton": [ 0.0 ],
+                        "ClearButton": [ 0.0 ],
+                        "CutOff_Dial": [ 1023.0 ],
+                        "Delay": [ 0 ],
+                        "Delay_Feedback": [ 0 ],
+                        "Delay_Time": [ 0 ],
+                        "EG_Attack": [ 0.0 ],
+                        "EG_Decay": [ 0.0 ],
+                        "EG_Int_Dial": [ 0.0 ],
+                        "EG_Mode_Selector": [ 2.0 ],
+                        "EG_Release": [ 0.0 ],
+                        "EG_Sustain": [ 0.0 ],
+                        "FX1_Menu": [ 0 ],
+                        "FX2_Menu": [ 0 ],
+                        "Filter": [ 0.0 ],
+                        "Filter_Keytrack": [ 1.0 ],
+                        "Filter_Pole": [ 1.0 ],
+                        "Filter_Velocity": [ 1.0 ],
+                        "ImportButton": [ -1 ],
+                        "ImportPresetMenu": [ 0 ],
+                        "LFO_Int": [ 511.0 ],
+                        "LFO_Rate": [ 511.0 ],
+                        "LFO_Target": [ 0.0 ],
+                        "LFO_Waveform": [ 0.0 ],
+                        "MASTER": [ 6.661338147750939e-15 ],
+                        "Main_Output": [ 0 ],
+                        "MasterGain": [ -20.11549305594869 ],
+                        "MenuPresetFiles": [ 7 ],
+                        "Noise_Gain": [ -70.0 ],
+                        "ParamButton[1]": [ 0.0 ],
+                        "Performance": [ 0 ],
+                        "Pitch_Antenna": [ 0 ],
+                        "Pitch_Antenna_Response": [ 0 ],
+                        "PowerButton": [ 0.0 ],
+                        "Quantize": [ 0 ],
+                        "Resonance_Dial": [ 0.0 ],
+                        "Response_Volume_Antenna": [ 0 ],
+                        "SaveAsButton": [ 0.0 ],
+                        "SaveButton": [ 0.0 ],
+                        "SaveMenu": [ 0 ],
+                        "SaveModeButton": [ 0.0 ],
+                        "Timbre": [ 0 ],
+                        "Toggle_SlotMode": [ 0.0 ],
+                        "UmenuSlot": [ 0 ],
+                        "VCO1_Gain[1]": [ 6.661338147750939e-15 ],
+                        "VCO2_CrossModDepth": [ 0.0 ],
+                        "VCO2_Gain": [ -70.0 ],
+                        "VCO2_Octave": [ 2 ],
+                        "VCO2_Pitch": [ 0.0 ],
+                        "VCO2_PitchEgInt": [ 0.0 ],
+                        "VCO2_RingModeOnOff": [ 1.0 ],
+                        "VCO2_Shape": [ 0.0 ],
+                        "VCO2_SyncOnOff": [ 1.0 ],
+                        "VCO2_Waveform": [ 0.0 ],
+                        "Volume": [ 0.13696428244880238 ],
+                        "Volume_Antenna": [ 0 ],
+                        "Wave": [ 0.0 ],
+                        "button[31]": [ 0.0 ],
+                        "button[32]": [ 1.0 ],
+                        "live.gain~": [ 0.0 ],
+                        "live.gain~[2]": [ 0.0 ],
+                        "live.gain~[4]": [ -70.0 ],
+                        "live.gain~[5]": [ -70.0 ],
+                        "live.numbox": [ 0.0 ],
+                        "live.numbox[1]": [ 94.3396224975586 ],
+                        "live.numbox[9]": [ 94.3396224975586 ],
+                        "live.text[5]": [ 0.0 ],
+                        "number[1]": [ 0.0 ],
+                        "rEGISTER": [ 0 ],
+                        "vst~[1]": [
+                            {
+                                "filetype": "C74Snapshot",
+                                "version": 2,
+                                "minorversion": 0,
+                                "name": "4U+ ProjectTime",
+                                "origin": "4U+ ProjectTime.vst3info",
+                                "type": "VST3",
+                                "subtype": "AudioEffect",
+                                "embed": 1,
+                                "snapshot": {
+                                    "pluginname": "4U+ ProjectTime.vst3info",
+                                    "plugindisplayname": "4U+ ProjectTime",
+                                    "pluginsavedname": "",
+                                    "pluginsaveduniqueid": -2109075060,
+                                    "version": 1,
+                                    "isbank": 0,
+                                    "isbase64": 1,
+                                    "blob": "2625.VMjLgfiB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DCN3PiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hXtDkQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjcvU0PIMERskkKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLXMDS3o1PLMiYC4zLXkFRl4xQgAyXVoEcqYTV3fDdXACVC4DLtjWSxPjULcVVogEZmkFVrU0PMYGVwf0ZiMkSyf0TNgVPokELPkFSvPjUNsVVS0DLHECVz3xPLoGRF4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHg1ZSwzclkVVqk0TNICSCwjdhMDSyn1TMkmY40DLpkGVnEULMcVVV4DZikFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR3gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHcGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSw3RZLQiKC4zLXMUS3gjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4TLtjFSynVZMcmK40DdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogzcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPNMiKCwjcHIDR1kjLgAWUwfkdAUEVvzzUYQ0ZVE1ZvjFR1gDZOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYo0jcHMjSzf0TLYmXowDZtfmX5UDahoGNEM1avXUV3fjTLIiYo0jcHMjSzfUdLcmYCwDZtHUVpslQiUVTWo0bUY0SnQTdMMCVCwDdlMkSwvzTLMiKogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogDZqMES2YVZYsVVS4jLLMDS5I1PLMiZS0TdlkWSvnVdXgVTwzzYYYkSnMVZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQISX1gSQi8FLVkENHIESxXVZMYGRC4DMhMESyvTdLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0QhkicCM0Sio2UGkjLgASPGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4TLtjFSz3xPLEiZCwzcHIDR4E0UXgWTxbkdqYUXqASZHcmXC4TLtjFSz3xPLMiKCwjdHIDRqEkUZoGNEM1avXUV3fjTLIiYo0jcHMkS14xPNYmKC0DZtfGV0AiUgsFMFMFNHgFRlwzQicFMFk0YIcTVAU0Qi4FNrIFNHgFRlQUUi8VTV8DZHYkS2QzPNwVUr0DMhkGS1AUdMYmYS4DLLMjSxP0TNkVRFkkLDwVVzfTLMg1LC8DS3nWTkMlZhUWUGIVYUoVX5kzUjYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczX0EjLWo2ZVE1ZvjFR2I1PNEiKowDMtLjSyf0TMgGRBgzaMIyUm0jQi8VVWkENHIESn4hTZkGNqIFLzvVXuQSLYgCRRwDZtfGV0AiUgsFMFMFNHgFR0MyPOUmc5M0Q3.ST3giUiYGMC8Tc1o2TG0zZOcCR5M0SyomTEUEQTkDM5EkYpEiXU0zUZQ2XrAELQESVqE0UOgFQogjYHY0XpMlUYoGLogjcyHDSncCZOcyMRAETAAyUDUDQUEDMC8Tclo2TFUjZQUWUsIVUAcTXvzzQTgGNro0ZMYzXTslUgsFMC4hKt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQtDDQlAEMAcEV40zQtDDQ14hK5EjKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UXwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+                                }
+                            }
+                        ],
+                        "vst~[2]": [
+                            {
+                                "filetype": "C74Snapshot",
+                                "version": 2,
+                                "minorversion": 0,
+                                "name": "MSaturator",
+                                "origin": "MSaturator.vstinfo",
+                                "type": "VST",
+                                "subtype": "MidiEffect",
+                                "embed": 1,
+                                "snapshot": {
+                                    "pluginname": "MSaturator.vstinfo",
+                                    "plugindisplayname": "MSaturator",
+                                    "pluginsavedname": "",
+                                    "pluginsaveduniqueid": 1296131380,
+                                    "version": 1,
+                                    "isbank": 0,
+                                    "isbase64": 1,
+                                    "blob": "304.CMlaKA....fQPMDZ....AzTPkQC...P.....A..........................................83ocYPF0RCCCDG+89onDeUs0NqzAoYvpSXfEGTQeNq4VWvrbijTY5mdORoBhucI2862etiu5xIS5mfyqQaM6tayYofsGUZ6PMaLb3lJ1JQBusSFFcx.57PHPM8oWQiyRW+0Yo2GKaPavgFCIaiUt2.pZFoaiRSXc5ugZ1C4Ku99pRVZq7xyO8xZC1+wTmEEzmPfXaHExydP0Qu.Lptc6ia24vAm7TyQoc.lBH5emYbPaeEQydo6W3H1ePZjAX.cTZtH2ayK8xpEkkELAeJ+BA+csJbrUv6vQWOPZfCZC0KdTxYYBd17HYyPIT4+NRhje.vBPcOC"
+                                }
+                            }
+                        ],
+                        "vst~[5]": [
+                            {
+                                "filetype": "C74Snapshot",
+                                "version": 2,
+                                "minorversion": 0,
+                                "name": "4U+ ProjectTime",
+                                "origin": "4U+ ProjectTime.vst3info",
+                                "type": "VST3",
+                                "subtype": "AudioEffect",
+                                "embed": 1,
+                                "snapshot": {
+                                    "pluginname": "4U+ ProjectTime.vst3info",
+                                    "plugindisplayname": "4U+ ProjectTime",
+                                    "pluginsavedname": "",
+                                    "pluginsaveduniqueid": -2109075060,
+                                    "version": 1,
+                                    "isbank": 0,
+                                    "isbase64": 1,
+                                    "blob": "2625.VMjLgfiB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DCN3PiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hXtDkQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjcvU0PIMERskkKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLXMDS3o1PLMiYC4zLXkFRl4xQgAyXVoEcqYTV3fDdXgVVS4TZMYTS1AkUMgVR40jcpMDSrU0PMYGVwf0ZiMkSyf0TNgVPokELpMTS3gzTYcVUS4TZMkFVx.0PNoGRC4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHICUwzjLLMTVrkTZLECTrgkdPECS1QTLLkVUSkUZMkWSqkUZXcVRVwzYUkFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR3gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHcGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSw3RZLQiKC4zLXMUS3gjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4TLtjFSynVZMcmKS0DdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogzcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPNMiKCwjcHIDR1kjLgAWUwfkdAUEVvzzUYQ0ZVE1ZvjFR1gDZOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYo0jcHMjSzf0TLYGUowDZtfmX5UDahoGNEM1avXUV3fjTLIiYo0jcHMjSzfUdLcmYCwDZtHUVpslQiUVTWo0bUY0SnQTdMMCVCwDdlMkSwvzTLMiKogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogjLTESSxvzPYwVRowTLPwFV5AULLYGQwvTZUMUVo0TdMsVVog0YIYESmUUZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQISX1gSQi8FLVkENHIESxXVZMYGRC4DMhMESyvTdLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0QhkicCM0Sio2UGkjLgASPGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4TLtjFSz3xPLEiZowTLHIDR4E0UXgWTxbkdqYUXqASZHcmXC4TLtjFSz3xPLMiKCwjdHIDRqEkUZoGNEM1avXUV3fjTLIiYo0jcHMkS14xPNYmKC0DZtfGV0AiUgsFMFMFNHgFRlwzQicFMFk0YIcTVAU0Qi4FNrIFNHgFRlQUUi8VTV8DZhMUVxHVdLoVVrwDdXMTVnE0PYkmKSgUdLYUSq0TLLICUr0DZEwFV2QjUMg1LC8DS3nWTkMlZhUWUGIVYUoVX5kzUjYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczX0EjLWo2ZVE1ZvjFR2I1PNEiKowDMtLjSyf0TMgGRBgzaMIyUm0jQi8VVWkENHIESn4hTZkGNqIFLzvVXuQSLYgCRRwDZtfGV0AiUgsFMFMFNHgFR0MyPOUmc5M0Q3.ST3giUiYGMC8Tc1o2TG0zZOcCR5M0SyomTEUEQTkDM5EkYpEiXU0zUZQ2XrAELQESVqE0UOgFQogjYHY0XpMlUYoGLogjcyHDSncCZOcyMRAETAAyUDUDQUEDMC8Tclo2TFUjZQUWUsIVUAcTXvzzQTgGNro0ZMYzXTslUgsFMC4hKt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQtDDQlAEMAcEV40zQtDDQ14hK5EjKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UXwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+                                }
+                            }
+                        ]
+                    },
                     "text": "autopattr",
                     "varname": "u993014853"
                 }
@@ -9979,151 +10018,6 @@
                     "numoutlets": 4,
                     "outlettype": [ "", "", "", "" ],
                     "patching_rect": [ 135.22414588928223, 578.6517316102982, 56.0, 22.0 ],
-                    "restore": {
-                        "AddButton": [ 0.0 ],
-                        "Amp_Eg_Attack": [ 0.0 ],
-                        "Amp_Eg_Decay": [ 0.0 ],
-                        "Amp_Eg_Release": [ 0.0 ],
-                        "Amp_Eg_Sustain": [ 0.0 ],
-                        "ArrowDownButton": [ 0.0 ],
-                        "ArrowUpButton": [ 0.0 ],
-                        "Brightness": [ 0 ],
-                        "ClearAllButton": [ 0.0 ],
-                        "ClearButton": [ 0.0 ],
-                        "CutOff_Dial": [ 1023.0 ],
-                        "Delay": [ 0 ],
-                        "Delay_Feedback": [ 0 ],
-                        "Delay_Time": [ 0 ],
-                        "EG_Attack": [ 0.0 ],
-                        "EG_Decay": [ 0.0 ],
-                        "EG_Int_Dial": [ 0.0 ],
-                        "EG_Mode_Selector": [ 2.0 ],
-                        "EG_Release": [ 0.0 ],
-                        "EG_Sustain": [ 0.0 ],
-                        "FX1_Menu": [ 0 ],
-                        "FX2_Menu": [ 0 ],
-                        "Filter": [ 1.0 ],
-                        "Filter_Keytrack": [ 1.0 ],
-                        "Filter_Pole": [ 1.0 ],
-                        "Filter_Velocity": [ 1.0 ],
-                        "ImportButton": [ -1 ],
-                        "ImportPresetMenu": [ 0 ],
-                        "LFO_Int": [ 511.0 ],
-                        "LFO_Rate": [ 511.0 ],
-                        "LFO_Target": [ 0.0 ],
-                        "LFO_Waveform": [ 0.0 ],
-                        "MASTER": [ 6.661338147750939e-15 ],
-                        "Main_Output": [ 0 ],
-                        "MasterGain": [ -0.4929485158875493 ],
-                        "MenuPresetFiles": [ 11 ],
-                        "Noise_Gain": [ -70.0 ],
-                        "ParamButton[1]": [ 0.0 ],
-                        "Performance": [ 0 ],
-                        "Pitch_Antenna": [ 0 ],
-                        "Pitch_Antenna_Response": [ 0 ],
-                        "PowerButton": [ 0.0 ],
-                        "Quantize": [ 0 ],
-                        "Resonance_Dial": [ 0.0 ],
-                        "Response_Volume_Antenna": [ 0 ],
-                        "SaveAsButton": [ 0.0 ],
-                        "SaveButton": [ 0.0 ],
-                        "SaveMenu": [ 0 ],
-                        "SaveModeButton": [ 0.0 ],
-                        "Timbre": [ 0 ],
-                        "Toggle_SlotMode": [ 1.0 ],
-                        "UmenuSlot": [ 0 ],
-                        "VCO1_Gain[1]": [ 6.661338147750939e-15 ],
-                        "VCO2_CrossModDepth": [ 0.0 ],
-                        "VCO2_Gain": [ -70.0 ],
-                        "VCO2_Octave": [ 2 ],
-                        "VCO2_Pitch": [ 0.0 ],
-                        "VCO2_PitchEgInt": [ 0.0 ],
-                        "VCO2_RingModeOnOff": [ 1.0 ],
-                        "VCO2_Shape": [ 0.0 ],
-                        "VCO2_SyncOnOff": [ 1.0 ],
-                        "VCO2_Waveform": [ 0.0 ],
-                        "Volume": [ 0.5162499876916411 ],
-                        "Volume_Antenna": [ 0 ],
-                        "Wave": [ 0.25757575757575757 ],
-                        "button[31]": [ 0.0 ],
-                        "button[32]": [ 0.0 ],
-                        "live.gain~": [ 0.0 ],
-                        "live.gain~[2]": [ 0.0 ],
-                        "live.gain~[4]": [ -70.0 ],
-                        "live.gain~[5]": [ -70.0 ],
-                        "live.numbox": [ 18.0 ],
-                        "live.numbox[1]": [ 0.0 ],
-                        "live.numbox[9]": [ 0.0 ],
-                        "live.text[5]": [ 0.0 ],
-                        "number[1]": [ 18.0 ],
-                        "rEGISTER": [ 0 ],
-                        "vst~[1]": [
-                            {
-                                "filetype": "C74Snapshot",
-                                "version": 2,
-                                "minorversion": 0,
-                                "name": "4U+ ProjectTime",
-                                "origin": "4U+ ProjectTime.vst3info",
-                                "type": "VST3",
-                                "subtype": "AudioEffect",
-                                "embed": 1,
-                                "snapshot": {
-                                    "pluginname": "4U+ ProjectTime.vst3info",
-                                    "plugindisplayname": "4U+ ProjectTime",
-                                    "pluginsavedname": "",
-                                    "pluginsaveduniqueid": -2109075060,
-                                    "version": 1,
-                                    "isbank": 0,
-                                    "isbase64": 1,
-                                    "blob": "3200.VMjLgbGC...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HyLwTiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hY1ciQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfjbqU0PIMERVYlKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLTMkSv.0PMYmKS4jLPkFRl4xQgAyXVoEcqYTV3fjPNgGS4gUdHMjSmc1PMIiYSgUZUYTVrU0PMYGVwf0ZiMkSyf0TNgVPokELlMTVpU0TMwVVrk0LPkFV3QjUYsVSC4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHEiZSk0cLECV5QkUYoVQVwjdXYEVqkjQNQiXSg0LHYEVnUUdXwVSF0jZMkFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR4gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHYGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSvn1PMACQCwjdDMDSyfjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4DLLMUS4I1PLAiXC4jdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogjcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPMYGUSwjctLDSn4hPhgGNro0ZMYzXPUjUikWUFU0avXUV3fjTNcGQS4jctLDSnMyPOwDN5EUYiolX0U0QhYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCU4wDLLkWS1QUdMMCTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCU4wDLLkWS1I1TMACRogjYTYTVuEkLWo2ZVE1ZvjFR2I1PNACSS0TdhMDSxP0TMgGRBgTZ3XUXyUEagoGLogDZtfmX5UDagoVQrIlZEQ0X5cVLggGLogDZtHUUvrlQYgCRn0DMTYESo0jQMsVUFk0YEMTSrUjUYg1YS4jLDYjSnUDaXACSrkUZQMTV4gDZOcic5M0Q3.ST3giUiYGNUEEcQ0lXzDDdXgWUVgkdqESXzgSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3IldEwlX5gSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3Ild3XjXkE0UZMWUV8DZDkWSyPUdLACVC4DLLMTS1gTZHYlZwHVYEECV5sFaisFLogzcHIDRu0jLWgWUsEFcqwVXsASZHYGRBgTZ3XUXyUEagoGLogDZ2f1S2biPS8zX5c0QIISXvDTaOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYS0DMPMTS4I1TMkmK4wDZtfmX5UDahoGNEM1avXUV3fjTLIiYS0DMPMTS4IVZMQiZS0DZtHUVpslQiUVTWo0bUY0SnQTdMMCUS4jdPkGSxf0TNQCUogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogTLpMUV2wTLXoGUVkkZEYES5gkUXsVRF4DMhMEVyfjUXgVU4gEaMYTSp0TZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQISX1gSQi8FLVkENHIESxX1TMQCTC0DMTkGSvX1PLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4X2PS8zX5c0QIISXvDjLWUDMFMFdqcDRokzUYcVTWoUczDyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTWgEdQIyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTxDlc3TzXuAiUYgCRRwjLlMUSz.0TMYmXo0jcDkGSn4hTZkGNUgUZQckVwTkUOglKogjYpEiXkkzUiQGMVoEciY0Sn4RZHYFSwD1bvXUVzE0UOgFR3sTN1MzTOMldWcTRxDFLAIyUEQiQig2ZGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4E0UXgWTxbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4EkLgYGNEM1avXUV3fjTLIiYS0DMPMUS54xPMACQSwDZtHkV4gSUXkVTWoULUY0SnQTZHYlZwHVYIc0XzQiUZQ2XV8DZtjFRlwTLgMGLVkEcQc0SngDdKkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQISX1gSQi8FLVkENHIESxX1TMQCUC0jdtLDSvPUZMglKRoUd3TEVoE0UZESUV8DZtjFRloVLhUVRWMFczXkVzMlUOgFQogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0Qhkic4sDS3nWTSQyPOIDN5M0RyQUTEETUR4zXDgzaMcUU4sFag0VRTMlZiYUV5ASZHcGRBgDZUcTVsUkQigCRBwDctjFR0MyPOUGQDQET3TTTAEUUPkic4sDR3nVTAkkdgASRWUkc2Y0X4EzZhU2aVkUZQcTUuAiUYkiKt3hKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDTtDDRTQlcEEiX4EDTtDDSt3xXt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQ77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
-                                }
-                            }
-                        ],
-                        "vst~[2]": [
-                            {
-                                "filetype": "C74Snapshot",
-                                "version": 2,
-                                "minorversion": 0,
-                                "name": "MSaturator",
-                                "origin": "MSaturator.vstinfo",
-                                "type": "VST",
-                                "subtype": "MidiEffect",
-                                "embed": 1,
-                                "snapshot": {
-                                    "pluginname": "MSaturator.vstinfo",
-                                    "plugindisplayname": "MSaturator",
-                                    "pluginsavedname": "",
-                                    "pluginsaveduniqueid": 1296131380,
-                                    "version": 1,
-                                    "isbank": 0,
-                                    "isbase64": 1,
-                                    "blob": "304.CMlaKA....fQPMDZ....AzTPkQC...P.....A..........................................83ocYPF0RCCCDG+89onDeUs0NqzAoYvpSXfEGTQeNq4VWvrbijTY5mdORoBhucI2862etiu5xIS5mfyqQaM6tayYofsGUZ6PMaLb3lJ1JQBusSFFcx.57PHPM8oWQiyRW+0Yo2GKaPavgFCIaiUt2.pZFoaiRSXc5ugZ1C4Ku99pRVZq7xyO8xZC1+wTmEEzmPfXaHExydP0Qu.Lptc6ia24vAm7TyQoc.lBH5emYbPaeEQydo6W3H1ePZjAX.cTZtH2ayK8xpEkkELAeJ+BA+csJbrUv6vQWOPZfCZC0KdTxYYBd17HYyPIT4+NRhje.vBPcOC"
-                                }
-                            }
-                        ],
-                        "vst~[5]": [
-                            {
-                                "filetype": "C74Snapshot",
-                                "version": 2,
-                                "minorversion": 0,
-                                "name": "4U+ ProjectTime",
-                                "origin": "4U+ ProjectTime.vst3info",
-                                "type": "VST3",
-                                "subtype": "AudioEffect",
-                                "embed": 1,
-                                "snapshot": {
-                                    "pluginname": "4U+ ProjectTime.vst3info",
-                                    "plugindisplayname": "4U+ ProjectTime",
-                                    "pluginsavedname": "",
-                                    "pluginsaveduniqueid": -2109075060,
-                                    "version": 1,
-                                    "isbank": 0,
-                                    "isbase64": 1,
-                                    "blob": "3200.VMjLgbGC...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HyLwTiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hY1ciQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfjbqU0PIMERVYlKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLTMkSv.0PMYmKS4jLXkFRl4xQgAyXVoEcqYTV3fDdMcVS4gkZEYTSok0PLkVU4wzYikWSrU0PMYGVwf0ZiMkSyf0TNgVPokELLYUSyfjULQiKS0TLHkGVvPjUNwVRF4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHg1YSg0YmMDSmE0PLwVV40jdPkVSnUDaXcGQV4zZQkWSzPkULcGVV4jdPwFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR4gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHYGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSvn1PMACQCwjdDMDSyfjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4DLLMUS4I1PLAiXS0DMHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogjcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPMYGUSwjctLDSn4hPhgGNro0ZMYzXPUjUikWUFU0avXUV3fjTNcGQS4jctLDSnMyPOwDN5EUYiolX0U0QhYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCU4wDLLkWS1QUdMAiZogjYLczXmkzQiUVTWo0bUY0SnQTdMMCU4wDLLkWS1I1TMACRogjYTYTVuEkLWo2ZVE1ZvjFR2I1PNACSS0TdhMDSxP0TMgGRBgTZ3XUXyUEagoGLogDZtfmX5UDagoVQrIlZEQ0X5cVLggGLogDZtHUUvrlQYgCRng0LDYEVy3xTXomKokULhMTS5gUZXcVRVwzYqMUV5I1TNsVQSwDaqMTSpkDZOcic5M0Q3.ST3giUiYGNUEEcQ0lXzDDdXgWUVgkdqESXzgSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3IldEwlX5gSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3Ild3XjXkE0UZMWUV8DZDkWSyPUdLACVC4DLLMTS1gTZHYlZwHVYEECV5sFaisFLogzcHIDRu0jLWgWUsEFcqwVXsASZHYGRBgTZ3XUXyUEagoGLogDZ2f1S2biPS8zX5c0QIISXvDTaOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYS0DMPMTS4I1TMkGTowDZtfmX5UDahoGNEM1avXUV3fjTLIiYS0DMPMTS4IVZMQiZS0DZtHUVpslQiUVTWo0bUY0SnQTdMMCUS4jdPkGSxf0TNQCUogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogDZmMEVmc1PLcVTCwDaYkWS5AUZMgVQrg0cDYkSqEUdMQCUVwzcXYkS5AEaHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQISX1gSQi8FLVkENHIESxX1TMQCTC0DMTkGSvX1PLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4X2PS8zX5c0QIISXvDjLWUDMFMFdqcDRokzUYcVTWoUczDyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTWgEdQIyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTxDlc3TzXuAiUYgCRRwjLlMUSz.0TMYmXo0jcDkGSn4hTZkGNUgUZQckVwTkUOglKogjYpEiXkkzUiQGMVoEciY0Sn4RZHYFSwD1bvXUVzE0UOgFR3sTN1MzTOMldWcTRxDFLAIyUEQiQig2ZGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4E0UXgWTxbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4EkLgYGNEM1avXUV3fjTLIiYS0DMPMUS54xPMACQSwDZtHkV4gSUXkVTWoULUY0SnQTZHYlZwHVYIc0XzQiUZQ2XV8DZtjFRlwTLgMGLVkEcQc0SngDdKkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQISX1gSQi8FLVkENHIESxX1TMQCUC0jdtLDSvPUZMglKRoUd3TEVoE0UZESUV8DZtjFRloVLhUVRWMFczXkVzMlUOgFQogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0Qhkic4sDS3nWTSQyPOIDN5M0RyQUTEETUR4zXDgzaMcUU4sFag0VRTMlZiYUV5ASZHcGRBgDZUcTVsUkQigCRBwDctjFR0MyPOUGQDQET3TTTAEUUPkic4sDR3nVTAkkdgASRWUkc2Y0X4EzZhU2aVkUZQcTUuAiUYkiKt3hKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDTtDDRTQlcEEiX4EDTtDDSt3xXt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQ77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
-                                }
-                            }
-                        ]
-                    },
                     "text": "autopattr",
                     "varname": "u966009030"
                 }
@@ -10586,7 +10480,7 @@
                             "version": 1,
                             "isbank": 0,
                             "isbase64": 1,
-                            "blob": "3200.VMjLgbGC...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HyLwTiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hY1ciQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfjbqU0PIMERVYlKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLTMkSv.0PMYGQCwzcDkFRl4xQgAyXVoEcqYTV3fDZXQCSVkEaIYTSmk0TLgGSwfUdpMUSrU0PMYGVwf0ZiMkSyf0TNgVPokELlMTVpU0TMwVVrk0LPkFV3QjUYsVSC4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHEiZSk0cLECV5QkUYoVQVwjdXYEVqkjQNQiXSg0LHYEVnUUdXwVSF0jZMkFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR4gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHYGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSvn1PMACQCwjdDMDSyfjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4DLLMUS4I1PLAiXC4jdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogjcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPMYGUSwjctLDSn4hPhgGNro0ZMYzXPUjUikWUFU0avXUV3fjTNcGQS4jctLDSnMyPOwDN5EUYiolX0U0QhYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCU4wDLLkWS1QUdMMCTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCU4wDLLkWS1I1TMACRogjYTYTVuEkLWo2ZVE1ZvjFR2I1PNACSS0TdhMDSxP0TMgGRBgTZ3XUXyUEagoGLogDZtfmX5UDagoVQrIlZEQ0X5cVLggGLogDZtHUUvrlQYgCRn0DMTYESo0jQMsVUFk0YEMTSrUjUYg1YS4jLDYjSnUDaXACSrkUZQMTV4gDZOcic5M0Q3.ST3giUiYGNUEEcQ0lXzDDdXgWUVgkdqESXzgSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3IldEwlX5gSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3Ild3XjXkE0UZMWUV8DZDkWSyPUdLACVC4DLLMTS1gTZHYlZwHVYEECV5sFaisFLogzcHIDRu0jLWgWUsEFcqwVXsASZHYGRBgTZ3XUXyUEagoGLogDZ2f1S2biPS8zX5c0QIISXvDTaOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYS0DMPMTS4I1TMkmK4wDZtfmX5UDahoGNEM1avXUV3fjTLIiYS0DMPMTS4IVZMQiZS0DZtHUVpslQiUVTWo0bUY0SnQTdMMCUS4jdPkGSxf0TNQCUogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogTLpMUV2wTLXoGUVkkZEYES5gkUXsVRF4DMhMEVyfjUXgVU4gEaMYTSp0TZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQISX1gSQi8FLVkENHIESxX1TMQCTC0DMTkGSvX1PLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4X2PS8zX5c0QIISXvDjLWUDMFMFdqcDRokzUYcVTWoUczDyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTWgEdQIyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTxDlc3TzXuAiUYgCRRwjLlMUSz.0TMYmXo0jcDkGSn4hTZkGNUgUZQckVwTkUOglKogjYpEiXkkzUiQGMVoEciY0Sn4RZHYFSwD1bvXUVzE0UOgFR3sTN1MzTOMldWcTRxDFLAIyUEQiQig2ZGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4E0UXgWTxbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4EkLgYGNEM1avXUV3fjTLIiYS0DMPMUS54xPMACQSwDZtHkV4gSUXkVTWoULUY0SnQTZHYlZwHVYIc0XzQiUZQ2XV8DZtjFRlwTLgMGLVkEcQc0SngDdKkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQISX1gSQi8FLVkENHIESxX1TMQCUC0jdtLDSvPUZMglKRoUd3TEVoE0UZESUV8DZtjFRloVLhUVRWMFczXkVzMlUOgFQogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0Qhkic4sDS3nWTSQyPOIDN5M0RyQUTEETUR4zXDgzaMcUU4sFag0VRTMlZiYUV5ASZHcGRBgDZUcTVsUkQigCRBwDctjFR0MyPOUGQDQET3TTTAEUUPkic4sDR3nVTAkkdgASRWUkc2Y0X4EzZhU2aVkUZQcTUuAiUYkiKt3hKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDTtDDRTQlcEEiX4EDTtDDSt3xXt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQ77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+                            "blob": "2625.VMjLgfiB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DCN3PiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hXtDkQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjcvU0PIMERskkKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLXMDS3o1PLMiYS4jcHkFRl4xQgAyXVoEcqYTV3fDdLkGUV0zZQMTSyn1PMoGSCwzLHYUVrU0PMYGVwf0ZiMkSyf0TNgVPokELPkFSvPjUNsVVS0DLHECVz3xPLoGRF4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHg1ZSwzclkVVqk0TNICSCwjdhMDSyn1TMkmY40DLpkGVnEULMcVVV4DZikFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR3gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHcGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSw3RZLQiKC4zLXMUS3gjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4TLtjFSynVZMcmK40DdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogzcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPNMiKCwjcHIDR1kjLgAWUwfkdAUEVvzzUYQ0ZVE1ZvjFR1gDZOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYo0jcHMjSzf0TLYmXowDZtfmX5UDahoGNEM1avXUV3fjTLIiYo0jcHMjSzfUdLcmYCwDZtHUVpslQiUVTWo0bUY0SnQTdMMCVCwDdlMkSwvzTLMiKogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogDZqMES2YVZYsVVS4jLLMDS5I1PLMiZS0TdlkWSvnVdXgVTwzzYYYkSnMVZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQISX1gSQi8FLVkENHIESxXVZMYGRC4DMhMESyvTdLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0QhkicCM0Sio2UGkjLgASPGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4TLtjFSz3xPLEiZCwzcHIDR4E0UXgWTxbkdqYUXqASZHcmXC4TLtjFSz3xPLMiKCwjdHIDRqEkUZoGNEM1avXUV3fjTLIiYo0jcHMkS14xPNYmKC0DZtfGV0AiUgsFMFMFNHgFRlwzQicFMFk0YIcTVAU0Qi4FNrIFNHgFRlQUUi8VTV8DZHYkS2QzPNwVUr0DMhkGS1AUdMYmYS4DLLMjSxP0TNkVRFkkLDwVVzfTLMg1LC8DS3nWTkMlZhUWUGIVYUoVX5kzUjYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczX0EjLWo2ZVE1ZvjFR2I1PNEiKowDMtLjSyf0TMgGRBgzaMIyUm0jQi8VVWkENHIESn4hTZkGNqIFLzvVXuQSLYgCRRwDZtfGV0AiUgsFMFMFNHgFR0MyPOUmc5M0Q3.ST3giUiYGMC8Tc1o2TG0zZOcCR5M0SyomTEUEQTkDM5EkYpEiXU0zUZQ2XrAELQESVqE0UOgFQogjYHY0XpMlUYoGLogjcyHDSncCZOcyMRAETAAyUDUDQUEDMC8Tclo2TFUjZQUWUsIVUAcTXvzzQTgGNro0ZMYzXTslUgsFMC4hKt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQtDDQlAEMAcEV40zQtDDQ14hK5EjKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UXwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
                         },
                         "snapshotlist": {
                             "current_snapshot": 0,
@@ -10608,7 +10502,7 @@
                                         "version": 1,
                                         "isbank": 0,
                                         "isbase64": 1,
-                                        "blob": "3200.VMjLgbGC...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HyLwTiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hY1ciQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfjbqU0PIMERVYlKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLTMkSv.0PMYGQCwzcDkFRl4xQgAyXVoEcqYTV3fDZXQCSVkEaIYTSmk0TLgGSwfUdpMUSrU0PMYGVwf0ZiMkSyf0TNgVPokELlMTVpU0TMwVVrk0LPkFV3QjUYsVSC4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHEiZSk0cLECV5QkUYoVQVwjdXYEVqkjQNQiXSg0LHYEVnUUdXwVSF0jZMkFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR4gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHYGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSvn1PMACQCwjdDMDSyfjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4DLLMUS4I1PLAiXC4jdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogjcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPMYGUSwjctLDSn4hPhgGNro0ZMYzXPUjUikWUFU0avXUV3fjTNcGQS4jctLDSnMyPOwDN5EUYiolX0U0QhYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCU4wDLLkWS1QUdMMCTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCU4wDLLkWS1I1TMACRogjYTYTVuEkLWo2ZVE1ZvjFR2I1PNACSS0TdhMDSxP0TMgGRBgTZ3XUXyUEagoGLogDZtfmX5UDagoVQrIlZEQ0X5cVLggGLogDZtHUUvrlQYgCRn0DMTYESo0jQMsVUFk0YEMTSrUjUYg1YS4jLDYjSnUDaXACSrkUZQMTV4gDZOcic5M0Q3.ST3giUiYGNUEEcQ0lXzDDdXgWUVgkdqESXzgSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3IldEwlX5gSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3Ild3XjXkE0UZMWUV8DZDkWSyPUdLACVC4DLLMTS1gTZHYlZwHVYEECV5sFaisFLogzcHIDRu0jLWgWUsEFcqwVXsASZHYGRBgTZ3XUXyUEagoGLogDZ2f1S2biPS8zX5c0QIISXvDTaOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYS0DMPMTS4I1TMkmK4wDZtfmX5UDahoGNEM1avXUV3fjTLIiYS0DMPMTS4IVZMQiZS0DZtHUVpslQiUVTWo0bUY0SnQTdMMCUS4jdPkGSxf0TNQCUogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogTLpMUV2wTLXoGUVkkZEYES5gkUXsVRF4DMhMEVyfjUXgVU4gEaMYTSp0TZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQISX1gSQi8FLVkENHIESxX1TMQCTC0DMTkGSvX1PLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4X2PS8zX5c0QIISXvDjLWUDMFMFdqcDRokzUYcVTWoUczDyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTWgEdQIyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTxDlc3TzXuAiUYgCRRwjLlMUSz.0TMYmXo0jcDkGSn4hTZkGNUgUZQckVwTkUOglKogjYpEiXkkzUiQGMVoEciY0Sn4RZHYFSwD1bvXUVzE0UOgFR3sTN1MzTOMldWcTRxDFLAIyUEQiQig2ZGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4E0UXgWTxbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4EkLgYGNEM1avXUV3fjTLIiYS0DMPMUS54xPMACQSwDZtHkV4gSUXkVTWoULUY0SnQTZHYlZwHVYIc0XzQiUZQ2XV8DZtjFRlwTLgMGLVkEcQc0SngDdKkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQISX1gSQi8FLVkENHIESxX1TMQCUC0jdtLDSvPUZMglKRoUd3TEVoE0UZESUV8DZtjFRloVLhUVRWMFczXkVzMlUOgFQogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0Qhkic4sDS3nWTSQyPOIDN5M0RyQUTEETUR4zXDgzaMcUU4sFag0VRTMlZiYUV5ASZHcGRBgDZUcTVsUkQigCRBwDctjFR0MyPOUGQDQET3TTTAEUUPkic4sDR3nVTAkkdgASRWUkc2Y0X4EzZhU2aVkUZQcTUuAiUYkiKt3hKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDTtDDRTQlcEEiX4EDTtDDSt3xXt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQ77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+                                        "blob": "2625.VMjLgfiB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DCN3PiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hXtDkQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjcvU0PIMERskkKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLXMDS3o1PLMiYS4jcHkFRl4xQgAyXVoEcqYTV3fDdLkGUV0zZQMTSyn1PMoGSCwzLHYUVrU0PMYGVwf0ZiMkSyf0TNgVPokELPkFSvPjUNsVVS0DLHECVz3xPLoGRF4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHg1ZSwzclkVVqk0TNICSCwjdhMDSyn1TMkmY40DLpkGVnEULMcVVV4DZikFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR3gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHcGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSw3RZLQiKC4zLXMUS3gjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4TLtjFSynVZMcmK40DdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogzcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPNMiKCwjcHIDR1kjLgAWUwfkdAUEVvzzUYQ0ZVE1ZvjFR1gDZOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYo0jcHMjSzf0TLYmXowDZtfmX5UDahoGNEM1avXUV3fjTLIiYo0jcHMjSzfUdLcmYCwDZtHUVpslQiUVTWo0bUY0SnQTdMMCVCwDdlMkSwvzTLMiKogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogDZqMES2YVZYsVVS4jLLMDS5I1PLMiZS0TdlkWSvnVdXgVTwzzYYYkSnMVZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQISX1gSQi8FLVkENHIESxXVZMYGRC4DMhMESyvTdLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0QhkicCM0Sio2UGkjLgASPGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4TLtjFSz3xPLEiZCwzcHIDR4E0UXgWTxbkdqYUXqASZHcmXC4TLtjFSz3xPLMiKCwjdHIDRqEkUZoGNEM1avXUV3fjTLIiYo0jcHMkS14xPNYmKC0DZtfGV0AiUgsFMFMFNHgFRlwzQicFMFk0YIcTVAU0Qi4FNrIFNHgFRlQUUi8VTV8DZHYkS2QzPNwVUr0DMhkGS1AUdMYmYS4DLLMjSxP0TNkVRFkkLDwVVzfTLMg1LC8DS3nWTkMlZhUWUGIVYUoVX5kzUjYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczX0EjLWo2ZVE1ZvjFR2I1PNEiKowDMtLjSyf0TMgGRBgzaMIyUm0jQi8VVWkENHIESn4hTZkGNqIFLzvVXuQSLYgCRRwDZtfGV0AiUgsFMFMFNHgFR0MyPOUmc5M0Q3.ST3giUiYGMC8Tc1o2TG0zZOcCR5M0SyomTEUEQTkDM5EkYpEiXU0zUZQ2XrAELQESVqE0UOgFQogjYHY0XpMlUYoGLogjcyHDSncCZOcyMRAETAAyUDUDQUEDMC8Tclo2TFUjZQUWUsIVUAcTXvzzQTgGNro0ZMYzXTslUgsFMC4hKt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQtDDQlAEMAcEV40zQtDDQ14hK5EjKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UXwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
                                     },
                                     "fileref": {
                                         "name": "Gatelab",
@@ -10964,7 +10858,7 @@
                             "version": 1,
                             "isbank": 0,
                             "isbase64": 1,
-                            "blob": "3200.VMjLgbGC...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HyLwTiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hY1ciQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfjbqU0PIMERVYlKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLTMkSv.0PMYGQCwDdDkFRl4xQgAyXVoEcqYTV3fDdLc1XogEMDkVS3QEaYkVPogUZEYUSrU0PMYGVwf0ZiMkSyf0TNgVPokELLYUSyfjULQiKS0TLHkGVvPjUNwVRF4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHg1YSg0YmMDSmE0PLwVV40jdPkVSnUDaXcGQV4zZQkWSzPkULcGVV4jdPwFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR4gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHYGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSvn1PMACQCwjdDMDSyfjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4DLLMUS4I1PLAiXS0DMHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogjcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPMYGUSwjctLDSn4hPhgGNro0ZMYzXPUjUikWUFU0avXUV3fjTNcGQS4jctLDSnMyPOwDN5EUYiolX0U0QhYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCU4wDLLkWS1QUdMAiZogjYLczXmkzQiUVTWo0bUY0SnQTdMMCU4wDLLkWS1I1TMACRogjYTYTVuEkLWo2ZVE1ZvjFR2I1PNACSS0TdhMDSxP0TMgGRBgTZ3XUXyUEagoGLogDZtfmX5UDagoVQrIlZEQ0X5cVLggGLogDZtHUUvrlQYgCRng0LDYEVy3xTXomKokULhMTS5gUZXcVRVwzYqMUV5I1TNsVQSwDaqMTSpkDZOcic5M0Q3.ST3giUiYGNUEEcQ0lXzDDdXgWUVgkdqESXzgSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3IldEwlX5gSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3Ild3XjXkE0UZMWUV8DZDkWSyPUdLACVC4DLLMTS1gTZHYlZwHVYEECV5sFaisFLogzcHIDRu0jLWgWUsEFcqwVXsASZHYGRBgTZ3XUXyUEagoGLogDZ2f1S2biPS8zX5c0QIISXvDTaOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYS0DMPMTS4I1TMkGTowDZtfmX5UDahoGNEM1avXUV3fjTLIiYS0DMPMTS4IVZMQiZS0DZtHUVpslQiUVTWo0bUY0SnQTdMMCUS4jdPkGSxf0TNQCUogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogDZmMEVmc1PLcVTCwDaYkWS5AUZMgVQrg0cDYkSqEUdMQCUVwzcXYkS5AEaHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQISX1gSQi8FLVkENHIESxX1TMQCTC0DMTkGSvX1PLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4X2PS8zX5c0QIISXvDjLWUDMFMFdqcDRokzUYcVTWoUczDyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTWgEdQIyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTxDlc3TzXuAiUYgCRRwjLlMUSz.0TMYmXo0jcDkGSn4hTZkGNUgUZQckVwTkUOglKogjYpEiXkkzUiQGMVoEciY0Sn4RZHYFSwD1bvXUVzE0UOgFR3sTN1MzTOMldWcTRxDFLAIyUEQiQig2ZGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4E0UXgWTxbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4EkLgYGNEM1avXUV3fjTLIiYS0DMPMUS54xPMACQSwDZtHkV4gSUXkVTWoULUY0SnQTZHYlZwHVYIc0XzQiUZQ2XV8DZtjFRlwTLgMGLVkEcQc0SngDdKkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQISX1gSQi8FLVkENHIESxX1TMQCUC0jdtLDSvPUZMglKRoUd3TEVoE0UZESUV8DZtjFRloVLhUVRWMFczXkVzMlUOgFQogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0Qhkic4sDS3nWTSQyPOIDN5M0RyQUTEETUR4zXDgzaMcUU4sFag0VRTMlZiYUV5ASZHcGRBgDZUcTVsUkQigCRBwDctjFR0MyPOUGQDQET3TTTAEUUPkic4sDR3nVTAkkdgASRWUkc2Y0X4EzZhU2aVkUZQcTUuAiUYkiKt3hKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDTtDDRTQlcEEiX4EDTtDDSt3xXt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQ77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+                            "blob": "2625.VMjLgfiB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DCN3PiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hXtDkQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjcvU0PIMERskkKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLXMDS3o1PLMiYS4jclkFRl4xQgAyXVoEcqYTV3fjPYk1ZCwTLXkFSwvTZXkVQCwDZYkFSrU0PMYGVwf0ZiMkSyf0TNgVPokELpMTS3gzTYcVUS4TZMkFVx.0PNoGRC4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHICUwzjLLMTVrkTZLECTrgkdPECS1QTLLkVUSkUZMkWSqkUZXcVRVwzYUkFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR3gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHcGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSw3RZLQiKC4zLXMUS3gjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4TLtjFSynVZMcmKS0DdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogzcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPNMiKCwjcHIDR1kjLgAWUwfkdAUEVvzzUYQ0ZVE1ZvjFR1gDZOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYo0jcHMjSzf0TLYGUowDZtfmX5UDahoGNEM1avXUV3fjTLIiYo0jcHMjSzfUdLcmYCwDZtHUVpslQiUVTWo0bUY0SnQTdMMCVCwDdlMkSwvzTLMiKogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogjLTESSxvzPYwVRowTLPwFV5AULLYGQwvTZUMUVo0TdMsVVog0YIYESmUUZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQISX1gSQi8FLVkENHIESxXVZMYGRC4DMhMESyvTdLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0QhkicCM0Sio2UGkjLgASPGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4TLtjFSz3xPLEiZowTLHIDR4E0UXgWTxbkdqYUXqASZHcmXC4TLtjFSz3xPLMiKCwjdHIDRqEkUZoGNEM1avXUV3fjTLIiYo0jcHMkS14xPNYmKC0DZtfGV0AiUgsFMFMFNHgFRlwzQicFMFk0YIcTVAU0Qi4FNrIFNHgFRlQUUi8VTV8DZhMUVxHVdLoVVrwDdXMTVnE0PYkmKSgUdLYUSq0TLLICUr0DZEwFV2QjUMg1LC8DS3nWTkMlZhUWUGIVYUoVX5kzUjYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczX0EjLWo2ZVE1ZvjFR2I1PNEiKowDMtLjSyf0TMgGRBgzaMIyUm0jQi8VVWkENHIESn4hTZkGNqIFLzvVXuQSLYgCRRwDZtfGV0AiUgsFMFMFNHgFR0MyPOUmc5M0Q3.ST3giUiYGMC8Tc1o2TG0zZOcCR5M0SyomTEUEQTkDM5EkYpEiXU0zUZQ2XrAELQESVqE0UOgFQogjYHY0XpMlUYoGLogjcyHDSncCZOcyMRAETAAyUDUDQUEDMC8Tclo2TFUjZQUWUsIVUAcTXvzzQTgGNro0ZMYzXTslUgsFMC4hKt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQtDDQlAEMAcEV40zQtDDQ14hK5EjKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UXwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
                         },
                         "snapshotlist": {
                             "current_snapshot": 0,
@@ -10986,7 +10880,7 @@
                                         "version": 1,
                                         "isbank": 0,
                                         "isbase64": 1,
-                                        "blob": "3200.VMjLgbGC...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HyLwTiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hY1ciQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfjbqU0PIMERVYlKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLTMkSv.0PMYGQCwDdDkFRl4xQgAyXVoEcqYTV3fDdLc1XogEMDkVS3QEaYkVPogUZEYUSrU0PMYGVwf0ZiMkSyf0TNgVPokELLYUSyfjULQiKS0TLHkGVvPjUNwVRF4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHg1YSg0YmMDSmE0PLwVV40jdPkVSnUDaXcGQV4zZQkWSzPkULcGVV4jdPwFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR4gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHYGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSvn1PMACQCwjdDMDSyfjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4DLLMUS4I1PLAiXS0DMHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogjcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPMYGUSwjctLDSn4hPhgGNro0ZMYzXPUjUikWUFU0avXUV3fjTNcGQS4jctLDSnMyPOwDN5EUYiolX0U0QhYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCU4wDLLkWS1QUdMAiZogjYLczXmkzQiUVTWo0bUY0SnQTdMMCU4wDLLkWS1I1TMACRogjYTYTVuEkLWo2ZVE1ZvjFR2I1PNACSS0TdhMDSxP0TMgGRBgTZ3XUXyUEagoGLogDZtfmX5UDagoVQrIlZEQ0X5cVLggGLogDZtHUUvrlQYgCRng0LDYEVy3xTXomKokULhMTS5gUZXcVRVwzYqMUV5I1TNsVQSwDaqMTSpkDZOcic5M0Q3.ST3giUiYGNUEEcQ0lXzDDdXgWUVgkdqESXzgSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3IldEwlX5gSQi8FLVkENHIESxX1TMkGU4wjLtjWSvPUZLglK3Ild3XjXkE0UZMWUV8DZDkWSyPUdLACVC4DLLMTS1gTZHYlZwHVYEECV5sFaisFLogzcHIDRu0jLWgWUsEFcqwVXsASZHYGRBgTZ3XUXyUEagoGLogDZ2f1S2biPS8zX5c0QIISXvDTaOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYS0DMPMTS4I1TMkGTowDZtfmX5UDahoGNEM1avXUV3fjTLIiYS0DMPMTS4IVZMQiZS0DZtHUVpslQiUVTWo0bUY0SnQTdMMCUS4jdPkGSxf0TNQCUogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogDZmMEVmc1PLcVTCwDaYkWS5AUZMgVQrg0cDYkSqEUdMQCUVwzcXYkS5AEaHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0jdLkWSwn1TNACRBgTdQISX1gSQi8FLVkENHIESxX1TMQCTC0DMTkGSvX1PLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4X2PS8zX5c0QIISXvDjLWUDMFMFdqcDRokzUYcVTWoUczDyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTWgEdQIyU5slUgsFLogzchMjSvn1PMomZS0TdTMjS1gjPHkWTxDlc3TzXuAiUYgCRRwjLlMUSz.0TMYmXo0jcDkGSn4hTZkGNUgUZQckVwTkUOglKogjYpEiXkkzUiQGMVoEciY0Sn4RZHYFSwD1bvXUVzE0UOgFR3sTN1MzTOMldWcTRxDFLAIyUEQiQig2ZGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4E0UXgWTxbkdqYUXqASZHcmXC4DLpMTSv3RdMEiKSwTdHIDR4EkLgYGNEM1avXUV3fjTLIiYS0DMPMUS54xPMACQSwDZtHkV4gSUXkVTWoULUY0SnQTZHYlZwHVYIc0XzQiUZQ2XV8DZtjFRlwTLgMGLVkEcQc0SngDdKkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNAiZC0DLPMDS5Q0TLcGRBgTdQISX1gSQi8FLVkENHIESxX1TMQCUC0jdtLDSvPUZMglKRoUd3TEVoE0UZESUV8DZtjFRloVLhUVRWMFczXkVzMlUOgFQogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0Qhkic4sDS3nWTSQyPOIDN5M0RyQUTEETUR4zXDgzaMcUU4sFag0VRTMlZiYUV5ASZHcGRBgDZUcTVsUkQigCRBwDctjFR0MyPOUGQDQET3TTTAEUUPkic4sDR3nVTAkkdgASRWUkc2Y0X4EzZhU2aVkUZQcTUuAiUYkiKt3hKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDTtDDRTQlcEEiX4EDTtDDSt3xXt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQ77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9.."
+                                        "blob": "2625.VMjLgfiB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DCN3PiKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3hXtDkQIoGTtEjKt3BRtnEaYESStvjKtLjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjcvU0PIMERskkKt3hc48zLvXTXlg0UYgWSWoUczX0SnQTZKYGRBgzZzDCV0EkUZQ2XV8DZTUTUFAiPNg1Mo8jY1MjTOkEUPYDNVMFdUUjXxUkLhAURxDFbUECV5EUUZMWUFgDLzDiX5UDahoWUFkENHIESn4hPgcVSGMVYMcEVwTkUOgFQ40zLXMDS3o1PLMiYS4jclkFRl4xQgAyXVoEcqYTV3fjPYk1ZCwTLXkFSwvTZXkVQCwDZYkFSrU0PMYGVwf0ZiMkSyf0TNgVPokELpMTS3gzTYcVUS4TZMkFVx.0PNoGRC4TdXwVS5QkUNkVUF4zLDkVSwPzTYYGUF0TLhkGVyP0PNMCQwfEZAMTS3wDaMECTF0jdTMkSmUkQYYmZ4gELTkFRlIlUi8VSUE1Y2YTXXASZHomZS0DZtfWVvrVLTMWQFElbqU0SngzPMcGRBgTaUckVBsVLYgELogzcHMDS1gjPH0VUWokPqESVYASZHEiKCwDZtHzX0giQggVQrIFRvjFR3oVZHYlcVgUdQcUU4UkQYY0ZVkkLvjFR1gDZOcCQDQET3TTTAEUUPkic4EUUqQDRu0jLT4FNwL1azDSVAU0Qi4FNrIFNHIDSn4hTZkWSEoUcickVzMVLPUGLVE1ZzXzX3fjTLglKRoUdMUjV0M1UZQ2XFE0YQcUV3fjTLglKBkELIcEV5sVLgQWTUo0bUwVT0kzUgcVTW8DZPkFRlA0UZMWUrEUcIcUXmE0UOgFTogTcyLzSLgidQUVVTIESUQDRLgSLYYzZFE1ZAUEV5clUOgFRBgzaMICT0QCagsVSFM1ZQY0Sn4RZHYlZwH1TmESXxrFag0VTTkkbUYzXqEULP41ZFElZIcUVzASZHYGRBgTUUckVpASZHICUwzjLLMTVrkTZLECTrgkdPECS1QTLLkVUSkUZMkWSqkUZXcVRVwzYUkFR0MyPOMDNrEldIISXx0zQHMWQrEFLEYTXCgCagoWRxDlbvjFR3gDdKkic4Q0ZQczXuQSLYkWPRMVdUYETvDkUZUWPUgELMcUV3fjTLglKRMVdUYTU3UDagkWPxDFdQcDUmUkLhsFLogzcHIDRqc1QhUWRGMVS3XTVqASZHcGRBgzazDCVxU0QYsVSTMFdIcUVzEkLTsVSxH1a3vVX3fjTLglKBMlaIcUV4cVLgIWTV8DZ5IUS1MiPLglK3I1a2YUVz0jUYU1XWoEcQESXxfSUS8FMVMldUEiX3fDdLYmKCwjctj1R1gDdKkic4I1ZMIiXugCagETSFM1aYckV5slLToWQFM1ZAgmXq0jLh8FNrEVPMYzXuk0UZo2ZxPkdEYzXqASZHcGRBgjbEEiX5UjdXo2ZrM1aQcEYTslUgsFLogzchMjSw3RZLQiKC4zLXMUS3gjPHkWUwHVdqESXz0TQicVRGMFUqYUXqASZHcmXC4TLtjFSynVZMcmKS0DdHIDRu0jLWY2cVgEMqwVXskjUXk1bV8DZtjFRloVLhUVRWkUZ3vlX0EkUZQ2XV8DZtjFRloVLhUFMwDldMUkVxUEagoGLogzcHg2R4X2PS8zX5QkYtzlX08lUYkVTGU0avXUV3fjPNMiKCwjcHIDR1kjLgAWUwfkdAUEVvzzUYQ0ZVE1ZvjFR1gDZOcic5M0Q3.ST3giUiYWP3gEdUYEV5sVLgQGNEM1avXUV3fjTLIiYo0jcHMjSzf0TLYGUowDZtfmX5UDahoGNEM1avXUV3fjTLIiYo0jcHMjSzfUdLcmYCwDZtHUVpslQiUVTWo0bUY0SnQTdMMCVCwDdlMkSwvzTLMiKogjYLESXyAiUYQWTW8DZHIDR4E0UXQWTVgEdQYETvD0QZUWRW8DZHIDRUU0UZoFLogjLTESSxvzPYwVRowTLPwFV5AULLYGQwvTZUMUVo0TdMsVVog0YIYESmUUZHkicCM0Sio2UGkjLgASPxbUQzXzX3s1QHkVRWk0YQckV0QSLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQcEV3EkLWo2ZVE1ZvjFR2I1PNEiKowzLpkVS4QzPNYGRBgTdQISX1gSQi8FLVkENHIESxXVZMYGRC4DMhMESyvTdLglKRoUd3TEVoE0UZESUV8DZDkFRloVLhUVRWMFczXkVzMlUOglKogjYLESXyAiUYQWTW8DZHg2R4XWdKwDN5EUYiolX0U0QhkicCM0Sio2UGkjLgASPGgTZIcUVmE0UZUGMwbkdqYUXqASZHcmXC4TLtjFSz3xPLEiZowTLHIDR4E0UXgWTxbkdqYUXqASZHcmXC4TLtjFSz3xPLMiKCwjdHIDRqEkUZoGNEM1avXUV3fjTLIiYo0jcHMkS14xPNYmKC0DZtfGV0AiUgsFMFMFNHgFRlwzQicFMFk0YIcTVAU0Qi4FNrIFNHgFRlQUUi8VTV8DZhMUVxHVdLoVVrwDdXMTVnE0PYkmKSgUdLYUSq0TLLICUr0DZEwFV2QjUMg1LC8DS3nWTkMlZhUWUGIVYUoVX5kzUjYFSrI1ZEYzXugCagUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczXmkzQiUVTWo0bUY0SnQTdMMCVCwDdpMDS1Y1PLYGTogjYLczX0EjLWo2ZVE1ZvjFR2I1PNEiKowDMtLjSyf0TMgGRBgzaMIyUm0jQi8VVWkENHIESn4hTZkGNqIFLzvVXuQSLYgCRRwDZtfGV0AiUgsFMFMFNHgFR0MyPOUmc5M0Q3.ST3giUiYGMC8Tc1o2TG0zZOcCR5M0SyomTEUEQTkDM5EkYpEiXU0zUZQ2XrAELQESVqE0UOgFQogjYHY0XpMlUYoGLogjcyHDSncCZOcyMRAETAAyUDUDQUEDMC8Tclo2TFUjZQUWUsIVUAcTXvzzQTgGNro0ZMYzXTslUgsFMC4hKt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQtDDQlAEMAcEV40zQtDDQ14hK5EjKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UXwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
                                     },
                                     "fileref": {
                                         "name": "Gatelab",
@@ -12409,7 +12303,7 @@
                             "expression": ""
                         },
                         "valueof": {
-                            "parameter_longname": "live.numbox[23]",
+                            "parameter_longname": "live.numbox[149]",
                             "parameter_mmax": 20000.0,
                             "parameter_modmode": 4,
                             "parameter_shortname": "live.numbox[15]",
@@ -12595,7 +12489,7 @@
                             "expression": ""
                         },
                         "valueof": {
-                            "parameter_longname": "live.numbox[15]",
+                            "parameter_longname": "live.numbox[26]",
                             "parameter_modmode": 3,
                             "parameter_shortname": "live.numbox[15]",
                             "parameter_type": 0,
@@ -14790,7 +14684,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 500 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.numbox[13]",
+                                            "parameter_longname": "live.numbox[129]",
                                             "parameter_mmax": 500.0,
                                             "parameter_mmin": 200.0,
                                             "parameter_modmode": 3,
@@ -15084,7 +14978,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 0.3 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.numbox[11]",
+                                            "parameter_longname": "live.numbox[130]",
                                             "parameter_mmax": 0.9,
                                             "parameter_mmin": 0.1,
                                             "parameter_modmode": 3,
@@ -15155,7 +15049,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 5.0 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.numbox[12]",
+                                            "parameter_longname": "live.numbox[131]",
                                             "parameter_mmax": 10.0,
                                             "parameter_mmin": 0.1,
                                             "parameter_modmode": 3,
@@ -16939,7 +16833,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 30 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.numbox[6]",
+                                            "parameter_longname": "live.numbox[136]",
                                             "parameter_mmax": 30.0,
                                             "parameter_mmin": 0.1,
                                             "parameter_modmode": 3,
@@ -18715,7 +18609,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 300.0 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.numbox[5]",
+                                            "parameter_longname": "live.numbox[146]",
                                             "parameter_mmax": 10000.0,
                                             "parameter_modmode": 3,
                                             "parameter_shortname": "live.numbox[1]",
@@ -18741,7 +18635,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 250.0 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.numbox[124]",
+                                            "parameter_longname": "live.numbox[145]",
                                             "parameter_mmax": 10000.0,
                                             "parameter_modmode": 3,
                                             "parameter_shortname": "live.numbox[1]",
@@ -18767,7 +18661,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 1000.0 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.numbox[125]",
+                                            "parameter_longname": "live.numbox[126]",
                                             "parameter_mmax": 10000.0,
                                             "parameter_modmode": 3,
                                             "parameter_shortname": "live.numbox[1]",
@@ -18793,7 +18687,7 @@
                                         "valueof": {
                                             "parameter_initial": [ 8000.0 ],
                                             "parameter_initial_enable": 1,
-                                            "parameter_longname": "live.numbox[126]",
+                                            "parameter_longname": "live.numbox[128]",
                                             "parameter_mmax": 10000.0,
                                             "parameter_modmode": 3,
                                             "parameter_shortname": "live.numbox[1]",
@@ -20972,219 +20866,327 @@
             },
             {
                 "box": {
-                    "activebgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
-                    "activebgoncolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
-                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
-                    "annotation": "",
-                    "bgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
-                    "bgoncolor": [ 0.615686274509804, 0.615686274509804, 0.615686274509804, 0.0 ],
-                    "bordercolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
-                    "hidden": 1,
-                    "hint": "",
-                    "id": "obj-559",
-                    "maxclass": "live.text",
-                    "mode": 0,
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 2534.482891559601, 1416.0000422000885, 56.833300054073334, 29.33333420753479 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 545.7692813873291, 48.504423692822456, 51.76991567015648, 26.991152614355087 ],
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "activebgoncolor": {
-                            "expression": ""
-                        },
-                        "activetextcolor": {
-                            "expression": ""
-                        },
-                        "bgcolor": {
-                            "expression": ""
-                        },
-                        "bgoncolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "valueof": {
-                            "parameter_enum": [ "val1", "val2" ],
-                            "parameter_linknames": 1,
-                            "parameter_longname": "AddButton",
-                            "parameter_mmax": 1,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "AddButton",
-                            "parameter_type": 2
-                        }
-                    },
-                    "text": "Add",
-                    "transition": 1,
-                    "valuepopuplabel": 1,
-                    "varname": "AddButton"
-                }
-            },
-            {
-                "box": {
-                    "activebgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
-                    "activebgoncolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
-                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
-                    "annotation": "",
-                    "bgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
-                    "bgoncolor": [ 0.615686274509804, 0.615686274509804, 0.615686274509804, 0.0 ],
-                    "bordercolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
-                    "hidden": 1,
-                    "hint": "",
-                    "id": "obj-330",
-                    "maxclass": "live.text",
-                    "mode": 0,
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 2672.41393327713, 1434.4828338623047, 56.833300054073334, 29.33333420753479 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 1013.7805116176605, 48.504423692822456, 51.76991567015648, 26.991152614355087 ],
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "activebgoncolor": {
-                            "expression": ""
-                        },
-                        "activetextcolor": {
-                            "expression": ""
-                        },
-                        "bgcolor": {
-                            "expression": ""
-                        },
-                        "bgoncolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "valueof": {
-                            "parameter_enum": [ "val1", "val2" ],
-                            "parameter_linknames": 1,
-                            "parameter_longname": "ClearAllButton",
-                            "parameter_mmax": 1,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "ClearAllButton",
-                            "parameter_type": 2
-                        }
-                    },
-                    "text": "Reset",
-                    "transition": 1,
-                    "valuepopuplabel": 1,
-                    "varname": "ClearAllButton"
-                }
-            },
-            {
-                "box": {
-                    "activebgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
-                    "activebgoncolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
-                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
-                    "annotation": "",
-                    "bgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
-                    "bgoncolor": [ 0.615686274509804, 0.615686274509804, 0.615686274509804, 0.0 ],
-                    "bordercolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
-                    "hidden": 1,
-                    "hint": "",
-                    "id": "obj-290",
-                    "maxclass": "live.text",
-                    "mode": 0,
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 2772.413938522339, 1430.8161667585373, 56.833300054073334, 29.33333420753479 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 954.024413, 48.504424, 51.769916, 26.991153 ],
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "activebgoncolor": {
-                            "expression": ""
-                        },
-                        "activetextcolor": {
-                            "expression": ""
-                        },
-                        "bgcolor": {
-                            "expression": ""
-                        },
-                        "bgoncolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "valueof": {
-                            "parameter_enum": [ "val1", "val2" ],
-                            "parameter_linknames": 1,
-                            "parameter_longname": "ClearButton",
-                            "parameter_mmax": 1,
-                            "parameter_modmode": 0,
-                            "parameter_shortname": "ClearButton",
-                            "parameter_type": 2
-                        }
-                    },
-                    "text": "Clear",
-                    "transition": 1,
-                    "valuepopuplabel": 1,
-                    "varname": "ClearButton"
-                }
-            },
-            {
-                "box": {
-                    "active1": [ 0.365, 0.42, 0.886, 1.0 ],
-                    "bgcolor": [ 0.176, 0.176, 0.176, 0.0 ],
-                    "bubblesize": 24,
-                    "emptycolor": [ 0.212, 0.212, 0.212, 1.0 ],
-                    "fontsize": 16.0,
-                    "hidden": 1,
-                    "id": "obj-93",
-                    "maxclass": "preset",
-                    "numinlets": 1,
-                    "numoutlets": 5,
-                    "outlettype": [ "preset", "int", "preset", "int", "" ],
-                    "patching_rect": [ 2576.315764904022, 1645.614019393921, 213.15789270401, 36.8421049118042 ],
-                    "pattrstorage": "presetPattrstorageGestCap",
-                    "presentation": 1,
-                    "presentation_rect": [ 609.366168, 48.0, 350.0, 28.0 ],
-                    "stored1": [ 0.31, 0.357, 0.608, 0.702 ],
-                    "textcolor": [ 0.2, 0.2, 0.2, 0.0 ],
-                    "varname": "SlotUIGestCap"
-                }
-            },
-            {
-                "box": {
-                    "bgcolor": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
-                    "bgcolor2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
+                    "applycolors": 1,
+                    "arrow": 0,
+                    "bgcolor": [ 0.8901960784313725, 0.16470588235294117, 0.16470588235294117, 0.0 ],
                     "bgfillcolor_angle": 270.0,
                     "bgfillcolor_autogradient": 0.0,
-                    "bgfillcolor_color": [ 0.0, 0.0, 0.0, 0.0 ],
+                    "bgfillcolor_color": [ 0.8901960784313725, 0.16470588235294117, 0.16470588235294117, 0.0 ],
                     "bgfillcolor_color1": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
                     "bgfillcolor_color2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 1.0 ],
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
-                    "gradient": 1,
+                    "color": [ 0.290283203125, 0.290283203125, 0.290283203125, 1.0 ],
+                    "fontsize": 12.0,
                     "hidden": 1,
-                    "id": "obj-561",
-                    "ignoreclick": 1,
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 2333.3333110809326, 1791.2280530929565, 210.3896083831787, 22.0 ],
+                    "id": "obj-226",
+                    "items": [ "<none>", ",", "Factory", "Presets", "(Default)", ",", "<separator>", ",", "Drop", "File/Folder", ",", "<separator>", ",", "Open", "Preset", "File", ",", "Open", "Preset", "Folder" ],
+                    "maxclass": "umenu",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "int", "", "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 951.7241878509521, 917.2414274215698, 44.726782619953156, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 725.0, 28.0, 103.83275508880615, 22.0 ],
-                    "text": "Neural Drift",
-                    "textcolor": [ 0.5098535418510437, 0.5883432626724243, 1.0, 0.7 ],
-                    "varname": "UI_Preset_SlotMode"
+                    "presentation_rect": [ 926.3401551246643, 50.55172657966614, 44.726782619953156, 22.0 ],
+                    "textcolor": [ 0.6078431372549019, 0.6078431372549019, 0.6078431372549019, 1.0 ],
+                    "varname": "ImportPresetMenu"
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 0.0 ],
+                    "fontsize": 36.0,
+                    "hidden": 1,
+                    "id": "obj-257",
+                    "ignoreclick": 1,
+                    "maxclass": "textbutton",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 951.7241878509521, 868.9655628204346, 43.52331590652466, 34.715025782585144 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 926.3401551246643, 44.36615991592407, 43.52331590652466, 34.715025782585144 ],
+                    "rounded": 240.0,
+                    "text": "+",
+                    "textcolor": [ 0.8392156862745098, 0.9450980392156862, 0.6549019607843137, 1.0 ],
+                    "texton": "+",
+                    "textoncolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
+                    "textovercolor": [ 0.36475205421447754, 0.41966676712036133, 0.8861922025680542, 1.0 ],
+                    "usetextovercolor": 1,
+                    "varname": "ImportButton"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.647059, 0.647059, 0.647059, 0.0 ],
+                    "activebgoncolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
+                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
+                    "activetextoncolor": [ 0.124064905296827, 0.124064860727621, 0.124064872278807, 1.0 ],
+                    "bgcolor": [ 0.647059, 0.647059, 0.647059, 0.0 ],
+                    "bgoncolor": [ 0.764706, 0.764706, 0.764706, 0.0 ],
+                    "bordercolor": [ 0.313725, 0.313725, 0.313725, 0.0 ],
+                    "focusbordercolor": [ 0.313725, 0.313725, 0.313725, 0.0 ],
+                    "fontsize": 36.0,
+                    "hidden": 1,
+                    "id": "obj-399",
+                    "maxclass": "live.text",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1134.4828181266785, 944.8276357650757, 22.0, 15.0 ],
+                    "pictures": [ "nav-arrow-left-solid.svg", "nav-arrow-left-solid.svg" ],
+                    "presentation": 1,
+                    "presentation_rect": [ 545.7692813873291, 47.307695388793945, 35.44303750991821, 29.11392366886139 ],
+                    "remapsvgcolors": 1,
+                    "rounded": 10.0,
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "activebgoncolor": {
+                            "expression": ""
+                        },
+                        "activetextcolor": {
+                            "expression": ""
+                        },
+                        "activetextoncolor": {
+                            "expression": ""
+                        },
+                        "bgcolor": {
+                            "expression": ""
+                        },
+                        "bgoncolor": {
+                            "expression": ""
+                        },
+                        "bordercolor": {
+                            "expression": ""
+                        },
+                        "focusbordercolor": {
+                            "expression": ""
+                        },
+                        "textcolor": {
+                            "expression": ""
+                        },
+                        "textoffcolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_invisible": 2,
+                            "parameter_linknames": 1,
+                            "parameter_longname": "ArrowUpButton",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "ArrowUpButton",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "<",
+                    "textcolor": [ 1.0, 0.725490196078431, 0.003921568627451, 1.0 ],
+                    "textoffcolor": [ 1.0, 0.725490196078431, 0.003921568627451, 1.0 ],
+                    "texton": "<",
+                    "usepicture": 1,
+                    "varname": "ArrowUpButton"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.647059, 0.647059, 0.647059, 0.0 ],
+                    "activebgoncolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
+                    "activetextcolor": [ 0.364752054214478, 0.419666767120361, 0.886192202568054, 1.0 ],
+                    "activetextoncolor": [ 0.124064905296827, 0.124064860727621, 0.124064872278807, 1.0 ],
+                    "bgcolor": [ 0.647059, 0.647059, 0.647059, 0.0 ],
+                    "bgoncolor": [ 0.764706, 0.764706, 0.764706, 0.0 ],
+                    "bordercolor": [ 0.313725, 0.313725, 0.313725, 0.0 ],
+                    "focusbordercolor": [ 0.313725, 0.313725, 0.313725, 0.0 ],
+                    "fontsize": 36.0,
+                    "hidden": 1,
+                    "id": "obj-398",
+                    "maxclass": "live.text",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1168.9655785560608, 944.8276357650757, 22.0, 15.0 ],
+                    "pictures": [ "nav-arrow-right-solid.svg", "nav-arrow-right-solid.svg" ],
+                    "presentation": 1,
+                    "presentation_rect": [ 571.9231300354004, 47.307695388793945, 35.44303750991821, 29.11392366886139 ],
+                    "remapsvgcolors": 1,
+                    "rounded": 10.0,
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "activebgoncolor": {
+                            "expression": ""
+                        },
+                        "activetextcolor": {
+                            "expression": ""
+                        },
+                        "activetextoncolor": {
+                            "expression": ""
+                        },
+                        "bgcolor": {
+                            "expression": ""
+                        },
+                        "bgoncolor": {
+                            "expression": ""
+                        },
+                        "bordercolor": {
+                            "expression": ""
+                        },
+                        "focusbordercolor": {
+                            "expression": ""
+                        },
+                        "textcolor": {
+                            "expression": ""
+                        },
+                        "textoffcolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_invisible": 2,
+                            "parameter_linknames": 1,
+                            "parameter_longname": "ArrowDownButton",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "ArrowDownButton",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": ">",
+                    "textcolor": [ 0.0, 0.0, 0.0, 0.0 ],
+                    "textoffcolor": [ 1.0, 0.725490196078431, 0.003921568627451, 1.0 ],
+                    "texton": ">",
+                    "usepicture": 1,
+                    "varname": "ArrowDownButton"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
+                    "activebgoncolor": [ 0.9019607843137255, 0.6509803921568628, 0.050980392156862744, 0.0 ],
+                    "activetextcolor": [ 0.8590264320373535, 0.8664560914039612, 0.8469980359077454, 1.0 ],
+                    "bgcolor": [ 0.37254901960784315, 0.37254901960784315, 0.37254901960784315, 0.0 ],
+                    "bordercolor": [ 0.11764705882352941, 0.11764705882352941, 0.11764705882352941, 0.0 ],
+                    "focusbordercolor": [ 0.5058823529411764, 0.5058823529411764, 0.5058823529411764, 0.0 ],
+                    "hidden": 1,
+                    "hint": "",
+                    "id": "obj-522",
+                    "maxclass": "live.text",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 2262.0690841674805, 844.827630519867, 80.0, 37.0 ],
+                    "pictures": [ "floppy-disk-arrow-in.svg", "<none>" ],
+                    "presentation": 1,
+                    "presentation_rect": [ 999.5360273122787, 45.39708769321442, 35.0, 33.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "activebgoncolor": {
+                            "expression": ""
+                        },
+                        "activetextcolor": {
+                            "expression": ""
+                        },
+                        "bgcolor": {
+                            "expression": ""
+                        },
+                        "bordercolor": {
+                            "expression": ""
+                        },
+                        "focusbordercolor": {
+                            "expression": ""
+                        },
+                        "textoffcolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "val1", "val2" ],
+                            "parameter_longname": "live.text[3]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.text",
+                            "parameter_type": 2
+                        }
+                    },
+                    "text": "Routing Matrix",
+                    "textoffcolor": [ 0.8824790716171265, 0.5881627798080444, 0.008070582523941994, 1.0 ],
+                    "usepicture": 1,
+                    "varname": "SaveModeButton"
+                }
+            },
+            {
+                "box": {
+                    "applycolors": 1,
+                    "arrow": 0,
+                    "bgcolor": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
+                    "bgfillcolor_angle": 270.0,
+                    "bgfillcolor_autogradient": 0.0,
+                    "bgfillcolor_color": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
+                    "bgfillcolor_color1": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
+                    "bgfillcolor_color2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 1.0 ],
+                    "bgfillcolor_proportion": 0.5,
+                    "bgfillcolor_type": "color",
+                    "color": [ 0.290283203125, 0.290283203125, 0.290283203125, 1.0 ],
+                    "fontsize": 12.0,
+                    "hidden": 1,
+                    "id": "obj-397",
+                    "items": [ "<none>", ",", "Save", ",", "Save", "As", ",", "Save", "With", "Files", "(Disabled)", ",", "Export", "Preset", "(Disabled)" ],
+                    "maxclass": "umenu",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "int", "", "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 2262.0690841674805, 882.7586669921875, 82.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 999.5360273122787, 50.55172657966614, 35.0, 22.0 ],
+                    "textcolor": [ 0.6078431372549019, 0.6078431372549019, 0.6078431372549019, 1.0 ],
+                    "varname": "SaveMenu"
+                }
+            },
+            {
+                "box": {
+                    "align": 1,
+                    "allowdrag": 0,
+                    "applycolors": 1,
+                    "arrow": 0,
+                    "autopopulate": 1,
+                    "bgcolor": [ 0.0, 0.0, 0.0, 1.0 ],
+                    "bgfillcolor_angle": 270.0,
+                    "bgfillcolor_autogradient": 0.0,
+                    "bgfillcolor_color": [ 0.0, 0.0, 0.0, 1.0 ],
+                    "bgfillcolor_color1": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 0.0 ],
+                    "bgfillcolor_color2": [ 0.208680531953877, 0.20868047419733, 0.208680489290039, 1.0 ],
+                    "bgfillcolor_proportion": 0.5,
+                    "bgfillcolor_type": "color",
+                    "color": [ 0.35294117647058826, 0.40784313725490196, 0.6941176470588235, 0.37 ],
+                    "fontface": 0,
+                    "fontsize": 24.0,
+                    "hidden": 1,
+                    "id": "obj-396",
+                    "items": [ "Algorithmic", "Dust", ",", "Controller", "Grainscape", ",", "Formant", "Cloud", ",", "Gesture", "Bloom", ",", "Haptic", "Flux", ",", "Init", "Gamepad", ",", "Init", "Landmarks", ",", "Init", "Preset", ",", "Kinetic", "Shards", ",", "Landmark", "Echoes", ",", "Motion", "Weaver", ",", "Neural", "Drift", ",", "Synapse", "Scatter" ],
+                    "maxclass": "umenu",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "int", "", "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1086.2069535255432, 1244.827651500702, 251.0, 35.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 640.3561545461416, 44.05172657966614, 261.28769090771675, 35.0 ],
+                    "textcolor": [ 0.36470588235294116, 0.4196078431372549, 0.8862745098039215, 1.0 ],
+                    "textjustification": 1,
+                    "truncate": 0,
+                    "types": "JSON",
+                    "varname": "MenuPresetFiles"
                 }
             }
         ],
@@ -23555,12 +23557,12 @@
         ],
         "parameters": {
             "obj-100::obj-11": [ "live.numbox[127]", "live.numbox[1]", 0 ],
-            "obj-100::obj-14": [ "live.numbox[126]", "live.numbox[1]", 0 ],
+            "obj-100::obj-14": [ "live.numbox[128]", "live.numbox[1]", 0 ],
             "obj-100::obj-189": [ "KEYTRACK[2]", "Keytrack", 0 ],
-            "obj-100::obj-22": [ "live.numbox[125]", "live.numbox[1]", 0 ],
+            "obj-100::obj-22": [ "live.numbox[126]", "live.numbox[1]", 0 ],
             "obj-100::obj-229": [ "KEYTRACK[3]", "Keytrack", 0 ],
-            "obj-100::obj-23": [ "live.numbox[124]", "live.numbox[1]", 0 ],
-            "obj-100::obj-25": [ "live.numbox[5]", "live.numbox[1]", 0 ],
+            "obj-100::obj-23": [ "live.numbox[145]", "live.numbox[1]", 0 ],
+            "obj-100::obj-25": [ "live.numbox[146]", "live.numbox[1]", 0 ],
             "obj-100::obj-27": [ "CUTOFF", "CutOff", 0 ],
             "obj-100::obj-29": [ "EG INT", "EG INT", 0 ],
             "obj-100::obj-44": [ "RESONANCE", "RES", 0 ],
@@ -23569,11 +23571,11 @@
             "obj-103": [ "LFO_Int", "LFO_Int", 0 ],
             "obj-104": [ "LFO_Rate", "LFO_Rate", 0 ],
             "obj-12": [ "LFO_Waveform", "LFO_Waveform", 0 ],
-            "obj-151": [ "live.numbox[15]", "live.numbox[15]", 0 ],
+            "obj-151": [ "live.numbox[26]", "live.numbox[15]", 0 ],
             "obj-156::obj-30": [ "WindowSizeButton", "WindowSizeButton", 0 ],
             "obj-156::obj-338": [ "close[14]", "close", 0 ],
             "obj-15::obj-15": [ "LFO RATE", "Lfo Rate", 0 ],
-            "obj-15::obj-2": [ "live.numbox[6]", "live.numbox[1]", 0 ],
+            "obj-15::obj-2": [ "live.numbox[136]", "live.numbox[1]", 0 ],
             "obj-15::obj-21": [ "LFO INT", "Lfo Int", 0 ],
             "obj-15::obj-29": [ "LFO TARGET", "Lfo Target", 0 ],
             "obj-15::obj-4": [ "LFO EG MODE", "Lfo EgMode", 0 ],
@@ -23588,14 +23590,14 @@
             "obj-181": [ "VCO2_Waveform", "VCO2_Waveform", 0 ],
             "obj-184::obj-15": [ "Pitch_OSC1[4]", "Pitch", 0 ],
             "obj-184::obj-21": [ "Shape_OSC1[4]", "Shape", 0 ],
-            "obj-184::obj-26": [ "live.numbox[11]", "live.numbox[7]", 0 ],
+            "obj-184::obj-26": [ "live.numbox[130]", "live.numbox[7]", 0 ],
             "obj-184::obj-44": [ "SYNC[2]", "SYNC", 0 ],
             "obj-184::obj-45": [ "PITCH EG INT[2]", "PITCH EG INT", 0 ],
             "obj-184::obj-46": [ "CROSS MODE DEPTH[2]", "CROSS MOD DEPTH", 0 ],
-            "obj-184::obj-78": [ "live.numbox[12]", "live.numbox[7]", 0 ],
+            "obj-184::obj-78": [ "live.numbox[131]", "live.numbox[7]", 0 ],
             "obj-184::obj-81": [ "live.tab[11]", "live.tab", 0 ],
             "obj-184::obj-95": [ "live.gain~[4]", "live.gain~[1]", 0 ],
-            "obj-184::obj-98": [ "live.numbox[13]", "live.numbox[7]", 0 ],
+            "obj-184::obj-98": [ "live.numbox[129]", "live.numbox[7]", 0 ],
             "obj-196": [ "EG_Release", "EG_Release", 0 ],
             "obj-197": [ "EG_Sustain", "EG_Sustain", 0 ],
             "obj-198": [ "EG_Decay", "EG_Decay", 0 ],
@@ -23643,9 +23645,14 @@
             "obj-1::obj-191": [ "L_pinky_pip_Led", "L_pinky_pip_Led", 0 ],
             "obj-1::obj-192": [ "L_pinky_mcp_Led", "L_pinky_mcp_Led", 0 ],
             "obj-1::obj-193": [ "L_wrist_Led", "L_wrist_Led", 0 ],
+            "obj-1::obj-198::obj-907::obj-851": [ "LogoInvertParam1[1]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-198::obj-907::obj-865": [ "live.numbox[2]", "live.numbox", 0 ],
+            "obj-1::obj-198::obj-907::obj-884": [ "live.numbox[1]", "live.numbox", 0 ],
+            "obj-1::obj-198::obj-907::obj-904": [ "live.text[1]", "live.text[30]", 0 ],
+            "obj-1::obj-198::obj-907::obj-910": [ "live.text[6]", "live.text[30]", 0 ],
             "obj-1::obj-20": [ "live.dial[18]", "7", 0 ],
             "obj-1::obj-204": [ "close[9]", "close", 0 ],
-            "obj-1::obj-211": [ "live.text[1]", "live.text", 0 ],
+            "obj-1::obj-211": [ "live.text[27]", "live.text", 0 ],
             "obj-1::obj-287": [ "L_thumb_cmc_Matrix", "L_thumb_cmc_Matrix", 0 ],
             "obj-1::obj-289": [ "live.dial[34]", "9", 0 ],
             "obj-1::obj-299": [ "L_thumb_ip_Matrix", "L_thumb_ip_Matrix", 0 ],
@@ -23675,15 +23682,15 @@
             "obj-1::obj-362": [ "live.numbox[75]", "live.numbox[17]", 0 ],
             "obj-1::obj-372": [ "live.numbox[72]", "live.numbox[17]", 0 ],
             "obj-1::obj-373": [ "live.numbox[91]", "live.numbox[17]", 0 ],
-            "obj-1::obj-400": [ "live.numbox[1]", "live.numbox[37]", 0 ],
-            "obj-1::obj-410": [ "live.numbox[2]", "live.numbox[17]", 0 ],
-            "obj-1::obj-412": [ "live.numbox[3]", "live.numbox[17]", 0 ],
-            "obj-1::obj-414": [ "live.numbox[4]", "live.numbox[6]", 0 ],
+            "obj-1::obj-400": [ "live.numbox[24]", "live.numbox[37]", 0 ],
+            "obj-1::obj-410": [ "live.numbox[23]", "live.numbox[17]", 0 ],
+            "obj-1::obj-412": [ "live.numbox[125]", "live.numbox[17]", 0 ],
+            "obj-1::obj-414": [ "live.numbox[124]", "live.numbox[6]", 0 ],
             "obj-1::obj-446": [ "live.numbox[70]", "live.numbox[17]", 0 ],
             "obj-1::obj-455": [ "live.numbox[103]", "live.numbox[37]", 0 ],
             "obj-1::obj-459": [ "live.numbox[104]", "live.numbox[17]", 0 ],
             "obj-1::obj-46": [ "live.numbox[97]", "live.numbox[17]", 0 ],
-            "obj-1::obj-460": [ "live.numbox[79]", "live.numbox[17]", 0 ],
+            "obj-1::obj-460": [ "live.numbox[25]", "live.numbox[17]", 0 ],
             "obj-1::obj-461": [ "live.numbox[80]", "live.numbox[6]", 0 ],
             "obj-1::obj-474": [ "live.numbox[71]", "live.numbox[17]", 0 ],
             "obj-1::obj-6": [ "L_wrist_Led[1]", "L_wrist_Led", 0 ],
@@ -23698,7 +23705,7 @@
             "obj-1::obj-615": [ "R_middle_tip_Matrix", "R_middle_dip_Matrix", 0 ],
             "obj-1::obj-616": [ "R_middle_dip_Matrix", "R_middle_dip_Matrix", 0 ],
             "obj-1::obj-621": [ "R_middle_pip_Matrix", "R_middle_pip_Matrix", 0 ],
-            "obj-1::obj-623": [ "live.numbox[24]", "live.numbox[17]", 0 ],
+            "obj-1::obj-623": [ "live.numbox[79]", "live.numbox[17]", 0 ],
             "obj-1::obj-624": [ "live.numbox[47]", "live.numbox[17]", 0 ],
             "obj-1::obj-625": [ "R_middle_mcp_Matrix", "R_middle_mcp_Matrix", 0 ],
             "obj-1::obj-626": [ "R_index_tip_Matrix", "R_index_tip_Matrix", 0 ],
@@ -23722,7 +23729,47 @@
             "obj-1::obj-666": [ "live.numbox[69]", "live.numbox[17]", 0 ],
             "obj-1::obj-668": [ "live.numbox[105]", "live.numbox", 0 ],
             "obj-1::obj-671": [ "TriggerResetMinParam1", "TriggerResetMinParam1", 0 ],
+            "obj-1::obj-673::obj-907::obj-851": [ "LogoInvertParam1[3]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-673::obj-907::obj-865": [ "live.numbox[4]", "live.numbox", 0 ],
+            "obj-1::obj-673::obj-907::obj-884": [ "live.numbox[3]", "live.numbox", 0 ],
+            "obj-1::obj-673::obj-907::obj-904": [ "live.text[7]", "live.text[30]", 0 ],
+            "obj-1::obj-673::obj-907::obj-910": [ "live.text[8]", "live.text[30]", 0 ],
+            "obj-1::obj-675::obj-907::obj-851": [ "LogoInvertParam1[4]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-675::obj-907::obj-865": [ "live.numbox[5]", "live.numbox", 0 ],
+            "obj-1::obj-675::obj-907::obj-884": [ "live.numbox[6]", "live.numbox", 0 ],
+            "obj-1::obj-675::obj-907::obj-904": [ "live.text[9]", "live.text[30]", 0 ],
+            "obj-1::obj-675::obj-907::obj-910": [ "live.text[10]", "live.text[30]", 0 ],
+            "obj-1::obj-683::obj-907::obj-851": [ "LogoInvertParam1[5]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-683::obj-907::obj-865": [ "live.numbox[7]", "live.numbox", 0 ],
+            "obj-1::obj-683::obj-907::obj-884": [ "live.numbox[8]", "live.numbox", 0 ],
+            "obj-1::obj-683::obj-907::obj-904": [ "live.text[11]", "live.text[30]", 0 ],
+            "obj-1::obj-683::obj-907::obj-910": [ "live.text[12]", "live.text[30]", 0 ],
+            "obj-1::obj-687::obj-907::obj-851": [ "LogoInvertParam1[6]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-687::obj-907::obj-865": [ "live.numbox[10]", "live.numbox", 0 ],
+            "obj-1::obj-687::obj-907::obj-884": [ "live.numbox[9]", "live.numbox", 0 ],
+            "obj-1::obj-687::obj-907::obj-904": [ "live.text[13]", "live.text[30]", 0 ],
+            "obj-1::obj-687::obj-907::obj-910": [ "live.text[14]", "live.text[30]", 0 ],
+            "obj-1::obj-689::obj-907::obj-851": [ "LogoInvertParam1[7]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-689::obj-907::obj-865": [ "live.numbox[12]", "live.numbox", 0 ],
+            "obj-1::obj-689::obj-907::obj-884": [ "live.numbox[11]", "live.numbox", 0 ],
+            "obj-1::obj-689::obj-907::obj-904": [ "live.text[16]", "live.text[30]", 0 ],
+            "obj-1::obj-689::obj-907::obj-910": [ "live.text[15]", "live.text[30]", 0 ],
+            "obj-1::obj-690::obj-907::obj-851": [ "LogoInvertParam1[8]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-690::obj-907::obj-865": [ "live.numbox[14]", "live.numbox", 0 ],
+            "obj-1::obj-690::obj-907::obj-884": [ "live.numbox[13]", "live.numbox", 0 ],
+            "obj-1::obj-690::obj-907::obj-904": [ "live.text[18]", "live.text[30]", 0 ],
+            "obj-1::obj-690::obj-907::obj-910": [ "live.text[17]", "live.text[30]", 0 ],
+            "obj-1::obj-691::obj-907::obj-851": [ "LogoInvertParam1[9]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-691::obj-907::obj-865": [ "live.numbox[15]", "live.numbox", 0 ],
+            "obj-1::obj-691::obj-907::obj-884": [ "live.numbox[16]", "live.numbox", 0 ],
+            "obj-1::obj-691::obj-907::obj-904": [ "live.text[19]", "live.text[30]", 0 ],
+            "obj-1::obj-691::obj-907::obj-910": [ "live.text[20]", "live.text[30]", 0 ],
             "obj-1::obj-692": [ "MaxNumbValDial1", "MaxNumbValDial1", 0 ],
+            "obj-1::obj-693::obj-907::obj-851": [ "LogoInvertParam1[10]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-693::obj-907::obj-865": [ "live.numbox[17]", "live.numbox", 0 ],
+            "obj-1::obj-693::obj-907::obj-884": [ "live.numbox[18]", "live.numbox", 0 ],
+            "obj-1::obj-693::obj-907::obj-904": [ "live.text[21]", "live.text[30]", 0 ],
+            "obj-1::obj-693::obj-907::obj-910": [ "live.text[22]", "live.text[30]", 0 ],
             "obj-1::obj-694": [ "LogoInvertParam1", "LogoInvertParam1", 0 ],
             "obj-1::obj-7": [ "L_pinky_mcp_Led[1]", "L_pinky_mcp_Led", 0 ],
             "obj-1::obj-702": [ "live.numbox[106]", "live.numbox", 0 ],
@@ -23755,8 +23802,18 @@
             "obj-1::obj-826": [ "live.numbox[122]", "live.numbox", 0 ],
             "obj-1::obj-829": [ "live.numbox[123]", "live.numbox", 0 ],
             "obj-1::obj-833": [ "live.numbox[77]", "live.numbox[37]", 0 ],
+            "obj-1::obj-838::obj-907::obj-851": [ "LogoInvertParam1[11]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-838::obj-907::obj-865": [ "live.numbox[19]", "live.numbox", 0 ],
+            "obj-1::obj-838::obj-907::obj-884": [ "live.numbox[20]", "live.numbox", 0 ],
+            "obj-1::obj-838::obj-907::obj-904": [ "live.text[23]", "live.text[30]", 0 ],
+            "obj-1::obj-838::obj-907::obj-910": [ "live.text[24]", "live.text[30]", 0 ],
             "obj-1::obj-843": [ "live.numbox[66]", "live.numbox[37]", 0 ],
             "obj-1::obj-849": [ "R_wrist_Matrix[2]", "R_wrist_Matrix", 0 ],
+            "obj-1::obj-851::obj-907::obj-851": [ "LogoInvertParam1[12]", "LogoInvertParam1", 0 ],
+            "obj-1::obj-851::obj-907::obj-865": [ "live.numbox[22]", "live.numbox", 0 ],
+            "obj-1::obj-851::obj-907::obj-884": [ "live.numbox[21]", "live.numbox", 0 ],
+            "obj-1::obj-851::obj-907::obj-904": [ "live.text[25]", "live.text[30]", 0 ],
+            "obj-1::obj-851::obj-907::obj-910": [ "live.text[26]", "live.text[30]", 0 ],
             "obj-1::obj-858": [ "live.numbox[46]", "live.numbox[37]", 0 ],
             "obj-1::obj-859": [ "R_wrist_Matrix[1]", "R_wrist_Matrix", 0 ],
             "obj-1::obj-885": [ "MinNumbValDial1", "MinNumbValDial1", 0 ],
@@ -23774,12 +23831,12 @@
             "obj-217": [ "Toggle_SlotMode", "Toggle_SlotMode", 0 ],
             "obj-269::obj-1": [ "Pitch_Bend", "Pitch_Bend", 0 ],
             "obj-269::obj-127::obj-11": [ "PITCH BEND SLIDE RANGE", "Slide Range", 0 ],
-            "obj-269::obj-127::obj-13": [ "live.numbox[9]", "live.numbox[9]", 0 ],
+            "obj-269::obj-127::obj-13": [ "live.numbox[147]", "live.numbox[9]", 0 ],
             "obj-269::obj-127::obj-45": [ "BANDE RANGE +", "BandeRage+", 0 ],
             "obj-269::obj-127::obj-48": [ "BANDE RANGE -", "BandeRage -", 0 ],
-            "obj-269::obj-130": [ "live.numbox[16]", "live.numbox", 0 ],
+            "obj-269::obj-130": [ "live.numbox[137]", "live.numbox", 0 ],
             "obj-269::obj-153": [ "live.numbox[81]", "live.numbox[15]", 0 ],
-            "obj-269::obj-157": [ "live.numbox[17]", "live.numbox[15]", 0 ],
+            "obj-269::obj-157": [ "live.numbox[132]", "live.numbox[15]", 0 ],
             "obj-269::obj-16": [ "Param_Pitch", "Param_Pitch", 0 ],
             "obj-269::obj-17": [ "Param_Gain", "Param_Gain", 0 ],
             "obj-269::obj-2": [ "ExponentPitch", "ExponentPitch", 0 ],
@@ -23787,19 +23844,19 @@
             "obj-269::obj-218": [ "MaxFreq", "MaxFreq", 0 ],
             "obj-269::obj-220": [ "MinPitch", "MinPitch", 0 ],
             "obj-269::obj-221": [ "MaxPitch", "MaxPitch", 0 ],
-            "obj-269::obj-254": [ "live.numbox[22]", "live.numbox[15]", 0 ],
+            "obj-269::obj-254": [ "live.numbox[133]", "live.numbox[15]", 0 ],
             "obj-269::obj-373": [ "live.tab", "live.tab", 0 ],
             "obj-27": [ "live.gain~", "live.gain~", 0 ],
             "obj-277::obj-131": [ "VCO1_Shape[1]", "VCO1_Shape", 0 ],
             "obj-277::obj-132": [ "VCO1_Pitch[1]", "VCO1_Pitch", 0 ],
             "obj-277::obj-21": [ "live.gain~[12]", "live.gain~[10]", 0 ],
-            "obj-277::obj-273": [ "live.numbox[131]", "live.numbox", 0 ],
-            "obj-277::obj-47": [ "live.numbox[132]", "live.numbox[7]", 0 ],
+            "obj-277::obj-273": [ "live.numbox[139]", "live.numbox", 0 ],
+            "obj-277::obj-47": [ "live.numbox[140]", "live.numbox[7]", 0 ],
             "obj-277::obj-520": [ "live.dial[25]", "VOLUME", 0 ],
             "obj-277::obj-529": [ "live.dial[26]", "PITCH", 0 ],
             "obj-277::obj-531": [ "live.dial[40]", "SHAPE", 0 ],
-            "obj-277::obj-532": [ "live.numbox[129]", "live.numbox", 0 ],
-            "obj-277::obj-78": [ "live.numbox[130]", "live.numbox[7]", 0 ],
+            "obj-277::obj-532": [ "live.numbox[148]", "live.numbox", 0 ],
+            "obj-277::obj-78": [ "live.numbox[138]", "live.numbox[7]", 0 ],
             "obj-277::obj-81": [ "VCO1_Waveform[1]", "VCO1_Waveform", 0 ],
             "obj-277::obj-95": [ "live.gain~[11]", "live.gain~[1]", 0 ],
             "obj-282": [ "VCO1_Gain[1]", "VCO1_Gain", 0 ],
@@ -23808,7 +23865,7 @@
             "obj-290": [ "ClearButton", "ClearButton", 0 ],
             "obj-296": [ "PowerButton", "PowerButton", 0 ],
             "obj-32": [ "MASTER", "MASTER", 0 ],
-            "obj-326": [ "live.numbox[23]", "live.numbox[15]", 0 ],
+            "obj-326": [ "live.numbox[149]", "live.numbox[15]", 0 ],
             "obj-330": [ "ClearAllButton", "ClearAllButton", 0 ],
             "obj-398": [ "ArrowDownButton", "ArrowDownButton", 0 ],
             "obj-399": [ "ArrowUpButton", "ArrowUpButton", 0 ],
@@ -23841,6 +23898,21 @@
                 "obj-1::obj-167": {
                     "parameter_longname": "live.numbox[78]"
                 },
+                "obj-1::obj-198::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[2]"
+                },
+                "obj-1::obj-198::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[1]"
+                },
+                "obj-1::obj-198::obj-907::obj-904": {
+                    "parameter_longname": "live.text[1]"
+                },
+                "obj-1::obj-198::obj-907::obj-910": {
+                    "parameter_longname": "live.text[6]"
+                },
+                "obj-1::obj-211": {
+                    "parameter_longname": "live.text[27]"
+                },
                 "obj-1::obj-289": {
                     "parameter_longname": "live.dial[34]"
                 },
@@ -23851,16 +23923,148 @@
                     "parameter_longname": "live.numbox[91]"
                 },
                 "obj-1::obj-400": {
-                    "parameter_longname": "live.numbox[1]"
+                    "parameter_longname": "live.numbox[24]"
+                },
+                "obj-1::obj-410": {
+                    "parameter_longname": "live.numbox[23]"
+                },
+                "obj-1::obj-412": {
+                    "parameter_longname": "live.numbox[125]"
+                },
+                "obj-1::obj-414": {
+                    "parameter_longname": "live.numbox[124]"
                 },
                 "obj-1::obj-460": {
-                    "parameter_longname": "live.numbox[79]"
+                    "parameter_longname": "live.numbox[25]"
                 },
                 "obj-1::obj-461": {
                     "parameter_longname": "live.numbox[80]"
                 },
+                "obj-1::obj-623": {
+                    "parameter_longname": "live.numbox[79]"
+                },
                 "obj-1::obj-660": {
                     "parameter_longname": "live.numbox"
+                },
+                "obj-1::obj-673::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[3]"
+                },
+                "obj-1::obj-673::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[4]"
+                },
+                "obj-1::obj-673::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[3]"
+                },
+                "obj-1::obj-673::obj-907::obj-904": {
+                    "parameter_longname": "live.text[7]"
+                },
+                "obj-1::obj-673::obj-907::obj-910": {
+                    "parameter_longname": "live.text[8]"
+                },
+                "obj-1::obj-675::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[4]"
+                },
+                "obj-1::obj-675::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[5]"
+                },
+                "obj-1::obj-675::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[6]"
+                },
+                "obj-1::obj-675::obj-907::obj-904": {
+                    "parameter_longname": "live.text[9]"
+                },
+                "obj-1::obj-675::obj-907::obj-910": {
+                    "parameter_longname": "live.text[10]"
+                },
+                "obj-1::obj-683::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[5]"
+                },
+                "obj-1::obj-683::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[7]"
+                },
+                "obj-1::obj-683::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[8]"
+                },
+                "obj-1::obj-683::obj-907::obj-904": {
+                    "parameter_longname": "live.text[11]"
+                },
+                "obj-1::obj-683::obj-907::obj-910": {
+                    "parameter_longname": "live.text[12]"
+                },
+                "obj-1::obj-687::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[6]"
+                },
+                "obj-1::obj-687::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[10]"
+                },
+                "obj-1::obj-687::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[9]"
+                },
+                "obj-1::obj-687::obj-907::obj-904": {
+                    "parameter_longname": "live.text[13]"
+                },
+                "obj-1::obj-687::obj-907::obj-910": {
+                    "parameter_longname": "live.text[14]"
+                },
+                "obj-1::obj-689::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[7]"
+                },
+                "obj-1::obj-689::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[12]"
+                },
+                "obj-1::obj-689::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[11]"
+                },
+                "obj-1::obj-689::obj-907::obj-904": {
+                    "parameter_longname": "live.text[16]"
+                },
+                "obj-1::obj-689::obj-907::obj-910": {
+                    "parameter_longname": "live.text[15]"
+                },
+                "obj-1::obj-690::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[8]"
+                },
+                "obj-1::obj-690::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[14]"
+                },
+                "obj-1::obj-690::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[13]"
+                },
+                "obj-1::obj-690::obj-907::obj-904": {
+                    "parameter_longname": "live.text[18]"
+                },
+                "obj-1::obj-690::obj-907::obj-910": {
+                    "parameter_longname": "live.text[17]"
+                },
+                "obj-1::obj-691::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[9]"
+                },
+                "obj-1::obj-691::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[15]"
+                },
+                "obj-1::obj-691::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[16]"
+                },
+                "obj-1::obj-691::obj-907::obj-904": {
+                    "parameter_longname": "live.text[19]"
+                },
+                "obj-1::obj-691::obj-907::obj-910": {
+                    "parameter_longname": "live.text[20]"
+                },
+                "obj-1::obj-693::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[10]"
+                },
+                "obj-1::obj-693::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[17]"
+                },
+                "obj-1::obj-693::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[18]"
+                },
+                "obj-1::obj-693::obj-907::obj-904": {
+                    "parameter_longname": "live.text[21]"
+                },
+                "obj-1::obj-693::obj-907::obj-910": {
+                    "parameter_longname": "live.text[22]"
                 },
                 "obj-1::obj-714": {
                     "parameter_longname": "live.numbox[108]"
@@ -23919,6 +24123,36 @@
                 "obj-1::obj-829": {
                     "parameter_longname": "live.numbox[123]"
                 },
+                "obj-1::obj-838::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[11]"
+                },
+                "obj-1::obj-838::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[19]"
+                },
+                "obj-1::obj-838::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[20]"
+                },
+                "obj-1::obj-838::obj-907::obj-904": {
+                    "parameter_longname": "live.text[23]"
+                },
+                "obj-1::obj-838::obj-907::obj-910": {
+                    "parameter_longname": "live.text[24]"
+                },
+                "obj-1::obj-851::obj-907::obj-851": {
+                    "parameter_longname": "LogoInvertParam1[12]"
+                },
+                "obj-1::obj-851::obj-907::obj-865": {
+                    "parameter_longname": "live.numbox[22]"
+                },
+                "obj-1::obj-851::obj-907::obj-884": {
+                    "parameter_longname": "live.numbox[21]"
+                },
+                "obj-1::obj-851::obj-907::obj-904": {
+                    "parameter_longname": "live.text[25]"
+                },
+                "obj-1::obj-851::obj-907::obj-910": {
+                    "parameter_longname": "live.text[26]"
+                },
                 "obj-1::obj-915::obj-907::obj-851": {
                     "parameter_longname": "LogoInvertParam1[2]"
                 },
@@ -23934,11 +24168,17 @@
                 "obj-1::obj-915::obj-907::obj-910": {
                     "parameter_longname": "live.text[4]"
                 },
+                "obj-269::obj-127::obj-13": {
+                    "parameter_longname": "live.numbox[147]"
+                },
                 "obj-269::obj-130": {
-                    "parameter_longname": "live.numbox[16]"
+                    "parameter_longname": "live.numbox[137]"
                 },
                 "obj-269::obj-153": {
                     "parameter_longname": "live.numbox[81]"
+                },
+                "obj-269::obj-157": {
+                    "parameter_longname": "live.numbox[132]"
                 },
                 "obj-269::obj-16": {
                     "parameter_invisible": 0,
@@ -23976,6 +24216,9 @@
                 "obj-269::obj-221": {
                     "parameter_range": [ 24.0, 127.0 ]
                 },
+                "obj-269::obj-254": {
+                    "parameter_longname": "live.numbox[133]"
+                },
                 "obj-277::obj-131": {
                     "parameter_longname": "VCO1_Shape[1]"
                 },
@@ -23986,10 +24229,10 @@
                     "parameter_longname": "live.gain~[12]"
                 },
                 "obj-277::obj-273": {
-                    "parameter_longname": "live.numbox[131]"
+                    "parameter_longname": "live.numbox[139]"
                 },
                 "obj-277::obj-47": {
-                    "parameter_longname": "live.numbox[132]"
+                    "parameter_longname": "live.numbox[140]"
                 },
                 "obj-277::obj-520": {
                     "parameter_longname": "live.dial[25]"
@@ -24003,10 +24246,10 @@
                     "parameter_unitstyle": 1
                 },
                 "obj-277::obj-532": {
-                    "parameter_longname": "live.numbox[129]"
+                    "parameter_longname": "live.numbox[148]"
                 },
                 "obj-277::obj-78": {
-                    "parameter_longname": "live.numbox[130]"
+                    "parameter_longname": "live.numbox[138]"
                 },
                 "obj-277::obj-81": {
                     "parameter_longname": "VCO1_Waveform[1]"

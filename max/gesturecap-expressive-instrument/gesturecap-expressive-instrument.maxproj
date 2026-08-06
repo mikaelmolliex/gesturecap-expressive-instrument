@@ -1,19 +1,19 @@
 {
-    "name": "gesturecap-osc-mapping",
+    "name": "gesturecap-expressive-instrument",
     "version": 1,
     "creationdate": 3862820256,
-    "modificationdate": 3867771211,
-    "viewrect": [ 0.0, 95.0, 1512.0, 853.0 ],
+    "modificationdate": 3868873899,
+    "viewrect": [ 0.0, 147.0, 1512.0, 801.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
     "showdependencies": 1,
     "autolocalize": 0,
     "contents": {
         "patchers": {
-            "gesturecap-osc-mapping.maxpat": {
+            "gesturecap-expressive-instrument.maxpat": {
                 "kind": "patcher",
                 "local": 1,
-                "toplevel": 1
+                "disclosed": 0
             }
         },
         "media": {
@@ -48,6 +48,10 @@
         },
         "code": {        },
         "data": {
+            "Init Preset.json": {
+                "kind": "json",
+                "local": 1
+            },
             "Nebula Drift.json": {
                 "kind": "json",
                 "local": 1
@@ -65,10 +69,6 @@
                 "local": 1
             },
             "Ionosphere Pulse.json": {
-                "kind": "json",
-                "local": 1
-            },
-            "Init Preset.json": {
                 "kind": "json",
                 "local": 1
             },
