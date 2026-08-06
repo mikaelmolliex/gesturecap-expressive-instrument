@@ -2,8 +2,8 @@
     "name": "gesturecap-osc-mapping",
     "version": 1,
     "creationdate": 3862820256,
-    "modificationdate": 3863530764,
-    "viewrect": [ 25.0, 114.0, 300.0, 500.0 ],
+    "modificationdate": 3867771211,
+    "viewrect": [ 0.0, 95.0, 1512.0, 853.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
     "showdependencies": 1,
@@ -13,12 +13,88 @@
             "gesturecap-osc-mapping.maxpat": {
                 "kind": "patcher",
                 "local": 1,
-                "toplevel": 1,
-                "disclosed": 0
+                "toplevel": 1
             }
         },
-        "media": {        },
-        "code": {        }
+        "media": {
+            "keyframes-solid.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "keyframes.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "04_Caspatic-MassiveX_wavetable.wav": {
+                "kind": "audiofile",
+                "local": 1
+            },
+            "03_Sin-Tri-Saw-SQ-MassiveX_wavetable.wav": {
+                "kind": "audiofile",
+                "local": 1
+            },
+            "02_Square-Minilogue_wavetable.wav": {
+                "kind": "audiofile",
+                "local": 1
+            },
+            "01_Tri-Minilogue_wavetable.wav": {
+                "kind": "audiofile",
+                "local": 1
+            },
+            "00_Saw-Minilogue_wavetable.wav": {
+                "kind": "audiofile",
+                "local": 1
+            }
+        },
+        "code": {        },
+        "data": {
+            "Nebula Drift.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Void Whisper.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Starlight Echo.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Plasma Wave.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Ionosphere Pulse.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Init Preset.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Ghostly Resonance.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Ethereal Bloom.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Chromatic Shift.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Celestial Choir.json": {
+                "kind": "json",
+                "local": 1
+            },
+            "Aurora Veil.json": {
+                "kind": "json",
+                "local": 1
+            }
+        },
+        "externals": {        },
+        "other": {        }
     },
     "layout": {    },
     "searchpath": {    },
