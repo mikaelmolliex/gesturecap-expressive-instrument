@@ -1,0 +1,512 @@
+//====================================================
+// FINAL - Frequency-Driven 2D Wavetable Reader
+//
+// USER CONTROLS
+//
+// sourceMode 0:
+//     freqHz is used directly.
+//
+// sourceMode 1:
+//     midiNote is converted to Hz internally.
+//
+// pitch:
+//     fine tuning / transposition in cents
+//     -1200..+1200
+//
+// shape:
+//     0..1
+//
+// The final frequency automatically controls:
+//
+//     1. oscillator playback frequency
+//     2. pitch-bank interpolation
+//
+// BUFFER LAYOUT
+//
+// Bank 0:
+//     Shape frames 0..255
+//
+// Bank 1:
+//     Shape frames 0..255
+//
+// etc.
+//
+// Each Shape frame:
+//     1024 samples
+//
+// Current bank organization:
+//
+// Bank 0 = 13.75 Hz
+// Bank 1 = 27.5 Hz
+// Bank 2 = 55 Hz
+// Bank 3 = 110 Hz
+// Bank 4 = 220 Hz
+// Bank 5 = 440 Hz
+// ...
+//====================================================
+
+Buffer multi_wt;
+
+//----------------------------------------------------
+// User parameters
+//----------------------------------------------------
+
+// 0 = direct Hz
+// 1 = MIDI note
+Param sourceMode(0);
+
+// Direct frequency input in Hz
+Param freqHz(220);
+
+// Optional MIDI input
+Param midiNote(57);
+
+// Fine tuning / transposition in cents
+Param pitch(0);
+
+// Wavetable Shape position
+Param shape(0);
+
+// Output level
+Param level(0.2);
+
+// Frequency represented by Bank 0
+Param firstBankFreq(13.75);
+
+//----------------------------------------------------
+// Wavetable constants
+//----------------------------------------------------
+
+TABLE_SIZE = 1024;
+SHAPE_FRAMES = 256;
+
+BANK_SIZE =
+    TABLE_SIZE
+    *
+    SHAPE_FRAMES;
+
+//----------------------------------------------------
+// Buffer information
+//----------------------------------------------------
+
+buffer_length =
+    dim(multi_wt);
+
+bank_count =
+    floor(
+        buffer_length
+        /
+        BANK_SIZE
+    );
+
+buffer_ready =
+    buffer_length >= BANK_SIZE;
+
+//----------------------------------------------------
+// MIDI note -> Hz
+//----------------------------------------------------
+
+midi_note_c =
+    clamp(
+        midiNote,
+        0,
+        127
+    );
+
+midi_freq =
+    440
+    *
+    pow(
+        2,
+        (midi_note_c - 69)
+        /
+        12
+    );
+
+//----------------------------------------------------
+// Select frequency source
+//----------------------------------------------------
+
+source_c =
+    clamp(
+        sourceMode,
+        0,
+        1
+    );
+
+base_freq =
+    source_c >= 0.5
+    ?
+    midi_freq
+    :
+    max(0.001, freqHz);
+
+//----------------------------------------------------
+// Fine tuning
+//----------------------------------------------------
+
+pitch_c =
+    clamp(
+        pitch,
+        -1200,
+        1200
+    );
+
+pitch_ratio =
+    pow(
+        2,
+        pitch_c
+        /
+        1200
+    );
+
+final_freq =
+    max(
+        0.001,
+        base_freq
+        *
+        pitch_ratio
+    );
+
+//----------------------------------------------------
+// Oscillator phase
+//----------------------------------------------------
+
+phase =
+    phasor(final_freq);
+
+//----------------------------------------------------
+// Frequency -> continuous bank position
+//----------------------------------------------------
+
+safe_first_freq =
+    max(
+        0.001,
+        firstBankFreq
+    );
+
+bank_pos_raw =
+    log(
+        final_freq
+        /
+        safe_first_freq
+    )
+    /
+    log(2);
+
+bank_pos =
+    clamp(
+        bank_pos_raw,
+        0,
+        max(
+            0,
+            bank_count - 1
+        )
+    );
+
+bank_a =
+    floor(bank_pos);
+
+bank_b =
+    min(
+        bank_a + 1,
+        max(
+            0,
+            bank_count - 1
+        )
+    );
+
+bank_mix =
+    bank_pos
+    -
+    bank_a;
+
+//----------------------------------------------------
+// Bank offsets
+//----------------------------------------------------
+
+offset_a =
+    bank_a
+    *
+    BANK_SIZE;
+
+offset_b =
+    bank_b
+    *
+    BANK_SIZE;
+
+//----------------------------------------------------
+// Shape position
+//----------------------------------------------------
+
+shape_c =
+    clamp(
+        shape,
+        0,
+        1
+    );
+
+shape_pos =
+    shape_c
+    *
+    (SHAPE_FRAMES - 1);
+
+shape_a =
+    floor(shape_pos);
+
+shape_b =
+    min(
+        shape_a + 1,
+        SHAPE_FRAMES - 1
+    );
+
+shape_mix =
+    shape_pos
+    -
+    shape_a;
+
+//----------------------------------------------------
+// Position inside waveform
+//----------------------------------------------------
+
+sample_pos =
+    phase
+    *
+    TABLE_SIZE;
+
+sample_a =
+    min(
+        floor(sample_pos),
+        TABLE_SIZE - 1
+    );
+
+sample_b =
+    (sample_a + 1)
+    %
+    TABLE_SIZE;
+
+sample_mix =
+    sample_pos
+    -
+    sample_a;
+
+//----------------------------------------------------
+// Lower-bank indices
+//----------------------------------------------------
+
+a_idx_00 =
+    offset_a
+    +
+    shape_a * TABLE_SIZE
+    +
+    sample_a;
+
+a_idx_01 =
+    offset_a
+    +
+    shape_a * TABLE_SIZE
+    +
+    sample_b;
+
+a_idx_10 =
+    offset_a
+    +
+    shape_b * TABLE_SIZE
+    +
+    sample_a;
+
+a_idx_11 =
+    offset_a
+    +
+    shape_b * TABLE_SIZE
+    +
+    sample_b;
+
+//----------------------------------------------------
+// Upper-bank indices
+//----------------------------------------------------
+
+b_idx_00 =
+    offset_b
+    +
+    shape_a * TABLE_SIZE
+    +
+    sample_a;
+
+b_idx_01 =
+    offset_b
+    +
+    shape_a * TABLE_SIZE
+    +
+    sample_b;
+
+b_idx_10 =
+    offset_b
+    +
+    shape_b * TABLE_SIZE
+    +
+    sample_a;
+
+b_idx_11 =
+    offset_b
+    +
+    shape_b * TABLE_SIZE
+    +
+    sample_b;
+
+//----------------------------------------------------
+// Read lower bank
+//----------------------------------------------------
+
+a_00 =
+    peek(
+        multi_wt,
+        a_idx_00,
+        0
+    );
+
+a_01 =
+    peek(
+        multi_wt,
+        a_idx_01,
+        0
+    );
+
+a_10 =
+    peek(
+        multi_wt,
+        a_idx_10,
+        0
+    );
+
+a_11 =
+    peek(
+        multi_wt,
+        a_idx_11,
+        0
+    );
+
+// Sample interpolation
+a_frame_0 =
+    mix(
+        a_00,
+        a_01,
+        sample_mix
+    );
+
+a_frame_1 =
+    mix(
+        a_10,
+        a_11,
+        sample_mix
+    );
+
+// Shape interpolation
+wave_a =
+    mix(
+        a_frame_0,
+        a_frame_1,
+        shape_mix
+    );
+
+//----------------------------------------------------
+// Read upper bank
+//----------------------------------------------------
+
+b_00 =
+    peek(
+        multi_wt,
+        b_idx_00,
+        0
+    );
+
+b_01 =
+    peek(
+        multi_wt,
+        b_idx_01,
+        0
+    );
+
+b_10 =
+    peek(
+        multi_wt,
+        b_idx_10,
+        0
+    );
+
+b_11 =
+    peek(
+        multi_wt,
+        b_idx_11,
+        0
+    );
+
+// Sample interpolation
+b_frame_0 =
+    mix(
+        b_00,
+        b_01,
+        sample_mix
+    );
+
+b_frame_1 =
+    mix(
+        b_10,
+        b_11,
+        sample_mix
+    );
+
+// Shape interpolation
+wave_b =
+    mix(
+        b_frame_0,
+        b_frame_1,
+        shape_mix
+    );
+
+//----------------------------------------------------
+// Pitch-bank interpolation
+//----------------------------------------------------
+
+wave =
+    mix(
+        wave_a,
+        wave_b,
+        bank_mix
+    );
+
+//----------------------------------------------------
+// Output
+//----------------------------------------------------
+
+out1 =
+    buffer_ready
+    ?
+    wave * level
+    :
+    0;
+
+//----------------------------------------------------
+// Diagnostic outputs
+//----------------------------------------------------
+
+// Actual oscillator frequency
+out2 = final_freq;
+
+// Continuous bank position
+out3 = bank_pos;
+
+// Lower bank
+out4 = bank_a;
+
+// Upper bank
+out5 = bank_b;
+
+// Interpolation amount
+out6 = bank_mix;
+
+// Shape frame position
+out7 = shape_pos;
+
+// Detected bank count
+out8 = bank_count;

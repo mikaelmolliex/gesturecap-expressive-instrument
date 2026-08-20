@@ -1,0 +1,70 @@
+//====================================================
+// Universal Wavetable Morph Reader
+// Automatically detects frame count from buffer length
+// buffer~ wt
+//====================================================
+
+Buffer wt;
+
+Param freq(55);
+Param pitch(0);
+Param shape(0);
+Param level(1);
+Param smooth(0.001);
+
+History s_smooth(0);
+
+TABLE_SIZE = 1024;
+
+// Detect buffer length and frame count
+buffer_length = dim(wt);
+frame_count = max(1, floor(buffer_length / TABLE_SIZE));
+
+// Pitch
+pitch_c = clamp(pitch, -1200, 1200);
+ratio = pow(2, pitch_c / 1200);
+f = freq * ratio;
+
+// Oscillator phase
+p = phasor(f);
+
+// Smooth wavetable position
+s_target = clamp(shape, 0, 1);
+s_smooth = mix(s_smooth, s_target, smooth);
+s = s_smooth;
+
+// Select neighboring frames
+frame_pos = s * (frame_count - 1);
+frame_a = floor(frame_pos);
+frame_b = min(frame_a + 1, frame_count - 1);
+frame_mix = frame_pos - frame_a;
+
+// Select neighboring samples inside each frame
+sample_pos = p * (TABLE_SIZE - 1);
+sample_a = floor(sample_pos);
+sample_b = min(sample_a + 1, TABLE_SIZE - 1);
+sample_mix = sample_pos - sample_a;
+
+// Convert frame/sample coordinates to buffer indices
+idx_a0 = frame_a * TABLE_SIZE + sample_a;
+idx_a1 = frame_a * TABLE_SIZE + sample_b;
+
+idx_b0 = frame_b * TABLE_SIZE + sample_a;
+idx_b1 = frame_b * TABLE_SIZE + sample_b;
+
+// Read buffer
+a0 = peek(wt, idx_a0, 0);
+a1 = peek(wt, idx_a1, 0);
+
+b0 = peek(wt, idx_b0, 0);
+b1 = peek(wt, idx_b1, 0);
+
+// Interpolate inside each frame
+wave_a = mix(a0, a1, sample_mix);
+wave_b = mix(b0, b1, sample_mix);
+
+// Interpolate between frames
+y = mix(wave_a, wave_b, frame_mix);
+
+// Output
+out1 = y * level;
