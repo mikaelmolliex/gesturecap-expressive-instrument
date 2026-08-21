@@ -5,4 +5,5 @@ tracker/
 *.zip
 *.zip.sha256
 
+.idea/
 

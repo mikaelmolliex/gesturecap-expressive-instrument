@@ -90,7 +90,7 @@ The toolkit is functional, while multidimensional `Pitch × Parameter` reconstru
 ### Master Integration — GestureCap Expressive Instrument
 
 **Repository:** [mikaelmolliex/gesturecap-expressive-instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument)  
-**Finalization branch:** [`gsoc2026-finalization`](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/tree/gsoc2026-finalization)
+**GSoC submission branch:** [`main`](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/tree/main)
 
 This repository is the central GSoC submission and the point where Parts A and B are assembled into a complete system:
 
@@ -136,8 +136,7 @@ This modular separation allows both sides to be developed and tested independent
 | --- | --- | --- | --- |
 | [Part A — GestureCap OSC](https://github.com/mikaelmolliex/gesturecap-osc) | MediaPipe → OSC → Max/MSP | [v0.1.0](https://github.com/mikaelmolliex/gesturecap-osc/releases/tag/v0.1.0) | Functional release |
 | [Part B — Wavetable Reconstruction](https://github.com/mikaelmolliex/wavetable-reconstruction) | Recordings → analysis → wavetables → Gen~ | [v0.3.0](https://github.com/mikaelmolliex/wavetable-reconstruction/releases/tag/v0.3.0) | Functional research pre-release |
-| [Master — Expressive Instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument) | OSC → mapping → synthesis → instrument | [`gsoc2026-finalization`](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/tree/gsoc2026-finalization) | Experimental integration |
-| [Gesture-recognition collaboration](https://github.com/mathewvallejo/GestureCap-GSoC-2026) | Gesture analysis → OSC | Public GSoC repository | Functional external input pipeline |
+| [Master — Expressive Instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument) | OSC → mapping → synthesis → instrument | [`main`](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/tree/main) | Experimental integration |
 
 The repositories are separated so that each component remains reusable and can maintain its own installation, build, and technical documentation. This README acts as the final report and central navigation page.
 
