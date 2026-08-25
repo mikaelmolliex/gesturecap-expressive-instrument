@@ -17,7 +17,7 @@ This project explores how hand movement can control a digital musical instrument
 
 The theremin served as a reference model for continuous, contact-free musical interaction. The objective was not simply to reproduce a theremin, but to study how spatial gesture, continuous pitch, dynamics, and timbre can form a playable relationship between movement and sound.
 
-The work developed through two complementary parts that meet in this master repository:
+The work developed through two complementary parts, brought together in a master integration:
 
 - **Part A — GestureCap OSC:** gesture acquisition, MediaPipe landmark streaming, OSC communication, Max/MSP integration, and standalone deployment.
 - **Part B — Wavetable Reconstruction:** analysis of recorded instruments, representative-cycle extraction, wavetable construction, and Gen~ playback.
@@ -61,16 +61,14 @@ The main additions are:
 
 Release `v0.1.0` includes the source snapshot, a packaged macOS arm64 tracker, and its SHA-256 checksum. Detailed installation and deployment instructions remain in the Part A repository.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mikaelmolliex/gesturecap-expressive-instrument/main/docs/gsoc-2026-final-report/assets/gesturecap-osc-routing-and-mapping-ui.png" alt="GestureCap OSC MediaPipe routing and mapping interface in Max/MSP" width="760">
-</p>
+![GestureCap OSC routing and mapping demo](https://raw.githubusercontent.com/mikaelmolliex/gesturecap-osc/v0.1.0/media/gesture-cap-demo.gif)
 
 <p align="center"><em>Part A interface in Max/MSP: MediaPipe landmark visualization, OSC routing matrix, and mapping controls.</em></p>
 
 ### Part B — Wavetable Reconstruction Toolkit
 
 **Repository:** [mikaelmolliex/wavetable-reconstruction](https://github.com/mikaelmolliex/wavetable-reconstruction)  
-**Pre-release:** [v0.3.0 — Initial wavetable reconstruction pipeline](https://github.com/mikaelmolliex/wavetable-reconstruction/releases/tag/v0.3.0)
+**Release:** [v0.1.0 — Initial wavetable reconstruction pipeline](https://github.com/mikaelmolliex/wavetable-reconstruction/releases/tag/v0.1.0)
 
 This toolkit reconstructs oscillator behaviour from recorded audio and prepares wavetable material for Gen~. Two main workflows were developed:
 
@@ -79,18 +77,17 @@ This toolkit reconstructs oscillator behaviour from recorded audio and prepares 
 
 The pitch-dependent workflow was developed around theremin recordings, where pitch and amplitude are controlled continuously by the performer and exact repetition cannot be assumed. Contact-sheet validation makes unstable or unusual candidates visible before correction or interpolation.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mikaelmolliex/gesturecap-expressive-instrument/main/docs/gsoc-2026-final-report/assets/chromatic-waveform-validation.png" alt="Chromatic waveform reconstruction validation contact sheet" width="760">
-</p>
+![Wavetable Reconstruction demo](https://raw.githubusercontent.com/mikaelmolliex/wavetable-reconstruction/v0.1.0/wavetable-reconstruction-demo.gif)
 
-<p align="center"><em>Representative cycles across the recorded chromatic range; highlighted candidates require review before wavetable construction.</em></p>
+**Video demonstration:** [Wavetable Reconstruction from Synthesizer Audio — GSoC 2026](https://www.youtube.com/watch?v=4OY7I74G3Ko)
 
 The toolkit is functional, while multidimensional `Pitch × Parameter` reconstruction and high-frequency behaviour remain experimental research directions.
 
 ### Master Integration — GestureCap Expressive Instrument
 
 **Repository:** [mikaelmolliex/gesturecap-expressive-instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument)  
-**GSoC submission branch:** [`main`](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/tree/main)
+**Release:** [v0.1.0 — GSoC 2026 Experimental
+Integration](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/releases/tag/v0.1.0)
 
 This repository is the central GSoC submission and the point where Parts A and B are assembled into an experimental complete system:
 
@@ -135,8 +132,8 @@ This modular separation allows both sides to be developed and tested independent
 | Deliverable | Role in the complete system | Public milestone | Status |
 | --- | --- | --- | --- |
 | [Part A — GestureCap OSC](https://github.com/mikaelmolliex/gesturecap-osc) | MediaPipe → OSC → Max/MSP | [v0.1.0](https://github.com/mikaelmolliex/gesturecap-osc/releases/tag/v0.1.0) | Functional release |
-| [Part B — Wavetable Reconstruction](https://github.com/mikaelmolliex/wavetable-reconstruction) | Recordings → analysis → wavetables → Gen~ | [v0.3.0](https://github.com/mikaelmolliex/wavetable-reconstruction/releases/tag/v0.3.0) | Functional research pre-release |
-| [Master — Expressive Instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument) | OSC → mapping → synthesis → instrument | [`main`](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/tree/main) | Experimental integration |
+| [Part B — Wavetable Reconstruction](https://github.com/mikaelmolliex/wavetable-reconstruction) | Recordings → analysis → wavetables → Gen~ | [v0.1.0](https://github.com/mikaelmolliex/wavetable-reconstruction/releases/tag/v0.1.0) | Functional release |
+| [Master — Expressive Instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument) | OSC → mapping → synthesis → instrument | [v0.1.0](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/releases/tag/v0.1.0)| Experimental integration |
 
 The repositories are separated so that each component remains reusable and can maintain its own installation, build, and technical documentation. The master repository README acts as the current project overview, while this document preserves the historical GSoC report.
 
@@ -160,7 +157,7 @@ The repositories are separated so that each component remains reusable and can m
 
 ## 8. Challenges and Lessons Learned
 
-Raw tracking data is not yet musical control. MediaPipe jitter and uncertain depth values made an intermediate calibration and mapping layer essential. Ranges, curves, constraints, and smoothing are not secondary interface features; they shape how the instrument feels to play.
+Raw tracking data does not automatically translate into stable musical control. MediaPipe jitter and uncertain depth values made an intermediate calibration and mapping layer essential. Ranges, curves, constraints, and smoothing are not secondary interface features; they shape how the instrument feels to play.
 
 Accessibility was another major concern. A workflow involving Python environments, OSC configuration, Max/MSP, camera permissions, and external processes can be difficult to reproduce. This led to additional work on launchers, packaging, reusable Max components, and deployment documentation.
 
@@ -170,7 +167,7 @@ Finally, the collaboration showed the value of a modular OSC boundary. Direct la
 
 ## 9. Documentation, Demonstrations & Future Work
 
-Technical setup and usage documentation live in the individual repositories, while this page provides the project-level overview. The Part A release supplies the packaged tracker; the Part B pre-release preserves the initial reconstruction milestone; and this master repository documents their integration.
+Technical setup and usage documentation live in the individual repositories, while this page provides the project-level overview. The Part A release supplies the packaged tracker; the Part B release preserves the initial reconstruction milestone; and this master repository documents their integration.
 
 Future work includes:
 
