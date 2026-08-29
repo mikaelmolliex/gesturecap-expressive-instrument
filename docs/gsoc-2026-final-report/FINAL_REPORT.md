@@ -184,7 +184,6 @@ Future work includes:
 - extending `Pitch × Parameter` reconstruction;
 - simplifying standalone deployment and validating other platforms;
 - developing demonstrations and documenting reusable musical mapping strategies;
-- exploring the framework as a basis for further research and a possible NIME submission.
 
 ## 10. Acknowledgements
 
