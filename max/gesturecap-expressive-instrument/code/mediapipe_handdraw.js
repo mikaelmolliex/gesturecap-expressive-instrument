@@ -87,6 +87,15 @@ function drawLoader(w, h)
     var cy = h * 0.5;
     var radius = 50;
 
+    // Neutral palette
+    var darkR = 0.28;
+    var darkG = 0.28;
+    var darkB = 0.27;
+
+    var creamR = 0.96;
+    var creamG = 0.94;
+    var creamB = 0.88;
+
     for (var i = 0; i < 12; i++)
     {
         var angle = spin + (i * Math.PI * 2 / 12);
@@ -95,21 +104,20 @@ function drawLoader(w, h)
         var y = cy + Math.sin(angle) * radius;
 
         var fade = (i + 1) / 12.0;
+        var alpha = 0.30 + fade * 0.70;
 
-        var r = 0.776 + (0.424 - 0.776) * fade;
-        var g = 0.306 + (0.420 - 0.306) * fade;
-        var b = 0.008 + (0.776 - 0.008) * fade;
+        var r = darkR + (creamR - darkR) * fade;
+        var g = darkG + (creamG - darkG) * fade;
+        var b = darkB + (creamB - darkB) * fade;
 
-        mgraphics.set_source_rgba(r, g, b, fade);
+        // Subtle outline for visibility on light backgrounds
+        mgraphics.set_source_rgba(0.12, 0.12, 0.12, 0.28);
+        mgraphics.arc(x, y, 7, 0, Math.PI * 2);
+        mgraphics.fill();
 
-        mgraphics.arc(
-            x,
-            y,
-            6,
-            0,
-            Math.PI * 2
-        );
-
+        // Neutral inner dot
+        mgraphics.set_source_rgba(r, g, b, alpha);
+        mgraphics.arc(x, y, 5.5, 0, Math.PI * 2);
         mgraphics.fill();
     }
 }

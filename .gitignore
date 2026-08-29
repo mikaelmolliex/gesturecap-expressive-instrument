@@ -1,9 +1,14 @@
 _DeletedItems/
 
 .DS_Store
-tracker/
+.idea/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Ignore release archives
 *.zip
 *.zip.sha256
 
-.idea/
-
+# Keep the PyInstaller runtime archive
+!tracker/**/base_library.zip

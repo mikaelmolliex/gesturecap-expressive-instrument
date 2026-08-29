@@ -424,6 +424,8 @@ function mode()
     // quand on revient sur hands
     if (UI_MODE === MODE_HANDS)
         emitAllHandLedStates();
+
+    emitCurrentModeMappings();
     notifyPattr();
     mgraphics.redraw();
 }
@@ -1968,6 +1970,82 @@ function emitAllHandLedStates()
     }
 }
 
+
+// ============================================================
+// MAPPING OUTPUT / ROUTING RESYNC
+// ============================================================
+//
+// Reemet l'etat complet du mode courant, y compris les valeurs 0.
+// Les valeurs 0 sont necessaires pour effacer les routes encore
+// actives dans Max lors d'un rappel de preset ou d'un changement
+// de mode.
+//
+// ============================================================
+
+function emitCurrentModeMappings()
+{
+    var state =
+        currentState();
+
+    var sourceCount =
+        getSourceCountForMode(
+            UI_MODE
+        );
+
+    var axisCount =
+        getAxisCountForMode(
+            UI_MODE
+        );
+
+    for (
+        var hand = 0;
+        hand < 2;
+        hand++
+    )
+    {
+        for (
+            var source = 0;
+            source < sourceCount;
+            source++
+        )
+        {
+            var sourceLabel =
+                getSourceLabel(
+                    hand,
+                    source
+                );
+
+            for (
+                var param = 0;
+                param < NUM_PARAMS;
+                param++
+            )
+            {
+                for (
+                    var axis = 0;
+                    axis < axisCount;
+                    axis++
+                )
+                {
+                    outlet(
+                        0,
+                        sourceLabel,
+                        axis,
+                        param,
+                        state.mappings
+                            [hand]
+                            [source]
+                            [param]
+                            [axis]
+                        ? 1
+                        : 0
+                    );
+                }
+            }
+        }
+    }
+}
+
 // ============================================================
 // INPUT
 //
@@ -2703,6 +2781,7 @@ function clear()
     if (UI_MODE === MODE_HANDS)
         emitAllHandLedStates();
 
+    emitCurrentModeMappings();
     notifyPattr();
     mgraphics.redraw();
 }
@@ -2720,6 +2799,7 @@ function clearall()
     if (UI_MODE === MODE_HANDS)
         emitAllHandLedStates();
 
+    emitCurrentModeMappings();
     notifyPattr();
     mgraphics.redraw();
 }
@@ -2770,6 +2850,7 @@ function clearmappings()
         }
     }
 
+    emitCurrentModeMappings();
     notifyPattr();
     mgraphics.redraw();
 }
@@ -2966,6 +3047,7 @@ function setvalueof()
         if (UI_MODE === MODE_HANDS)
             emitAllHandLedStates();
 
+        emitCurrentModeMappings();
 
         mgraphics.redraw();
     }

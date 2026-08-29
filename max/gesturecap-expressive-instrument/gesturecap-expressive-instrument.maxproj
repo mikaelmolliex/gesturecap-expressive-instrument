@@ -2,7 +2,7 @@
     "name": "gesturecap-expressive-instrument",
     "version": 1,
     "creationdate": 3862820256,
-    "modificationdate": 3870445116,
+    "modificationdate": 3870790097,
     "viewrect": [ 0.0, 147.0, 1512.0, 801.0 ],
     "autoorganize": 1,
     "hideprojectwindow": 0,
@@ -13,7 +13,7 @@
             "gesturecap-expressive-instrument.maxpat": {
                 "kind": "patcher",
                 "local": 1,
-                "disclosed": 0
+                "toplevel": 1
             }
         },
         "media": {
@@ -28,11 +28,11 @@
                 "kind": "vectorimagefile",
                 "local": 1
             },
-            "dots-grid3x3.svg": {
+            "cpu.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
             },
-            "gamepad.svg": {
+            "dots-grid3x3.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
             },
@@ -56,7 +56,7 @@
                 "kind": "vectorimagefile",
                 "local": 1
             },
-            "pc-mouse.svg": {
+            "settings.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
             },
@@ -69,6 +69,14 @@
                 "local": 1
             },
             "video-camera.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "gamepad.svg": {
+                "kind": "vectorimagefile",
+                "local": 1
+            },
+            "pc-mouse.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
             },
@@ -104,10 +112,6 @@
                 "kind": "vectorimagefile",
                 "local": 1
             },
-            "cpu.svg": {
-                "kind": "vectorimagefile",
-                "local": 1
-            },
             "arrow-up-circle-solid.svg": {
                 "kind": "vectorimagefile",
                 "local": 1
@@ -134,8 +138,9 @@
             }
         },
         "code": {
-            "gamepad_viz.js": {
-                "kind": "javascript"
+            "custom.dial.js": {
+                "kind": "javascript",
+                "local": 1
             },
             "gesture_mapper_ui_multimode_extended.js": {
                 "kind": "javascript"
@@ -146,112 +151,56 @@
             "run_mediapipe_maxmsp.js": {
                 "kind": "javascript"
             },
-            "run_mediapipe_standalone.js": {
-                "kind": "javascript"
-            },
             "run_mediapipe_maxmsp_project.js": {
                 "kind": "javascript",
                 "local": 1
             },
-            "run_mediapipe.js": {
-                "kind": "javascript",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "/Volumes/SanDisk_A_2T/DropBox_Cloud/Dropbox/BackUP/PROJET_BackUp/GitHub_Projets/00_MM_GitHub_Projects/drift-map/max/drift-map.0/code",
-                    "projectrelativepath": "../../../drift-map/max/drift-map.0/code"
-                }
-            },
-            "node-script_driftmap.js": {
-                "kind": "javascript",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "/Volumes/SanDisk_A_2T/DropBox_Cloud/Dropbox/BackUP/PROJET_BackUp/GitHub_Projets/00_MM_GitHub_Projects/drift-map/max/drift-map.0/code",
-                    "projectrelativepath": "../../../drift-map/max/drift-map.0/code"
-                }
-            },
-            "mediapipe_gl.js": {
-                "kind": "javascript",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "/Volumes/SanDisk_A_2T/DropBox_Cloud/Dropbox/BackUP/PROJET_BackUp/GitHub_Projets/00_MM_GitHub_Projects/drift-map/max/drift-map.0/code",
-                    "projectrelativepath": "../../../drift-map/max/drift-map.0/code"
-                }
-            },
-            "hands-landmarks-index.js": {
-                "kind": "javascript",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "/Volumes/SanDisk_A_2T/DropBox_Cloud/Dropbox/BackUP/PROJET_BackUp/GitHub_Projets/00_MM_GitHub_Projects/drift-map/max/drift-map.0/code",
-                    "projectrelativepath": "../../../drift-map/max/drift-map.0/code"
-                }
-            },
-            "gesture_mapper_ui.js": {
-                "kind": "javascript",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "/Volumes/SanDisk_A_2T/DropBox_Cloud/Dropbox/BackUP/PROJET_BackUp/GitHub_Projets/00_MM_GitHub_Projects/drift-map/max/drift-map.0/code",
-                    "projectrelativepath": "../../../drift-map/max/drift-map.0/code"
-                }
-            },
-            "gesture_mapper_ui_multimode.js": {
-                "kind": "javascript",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "/Volumes/SanDisk_A_2T/DropBox_Cloud/Dropbox/BackUP/PROJET_BackUp/GitHub_Projets/00_MM_GitHub_Projects/drift-map/max/drift-map.0/code",
-                    "projectrelativepath": "../../../drift-map/max/drift-map.0/code"
-                }
-            },
-            "createFolders.js": {
-                "kind": "javascript",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "/Volumes/SanDisk_A_2T/DropBox_Cloud/Dropbox/BackUP/PROJET_BackUp/GitHub_Projets/00_MM_GitHub_Projects/drift-map/max/drift-map.0/code",
-                    "projectrelativepath": "../../../drift-map/max/drift-map.0/code"
-                }
+            "run_mediapipe_standalone.js": {
+                "kind": "javascript"
             }
         },
         "data": {
-            "Init Preset.json": {
+            "Preset_1.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Nebula Drift.json": {
+            "Preset_6.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Void Whisper.json": {
+            "Preset_3.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Starlight Echo.json": {
+            "Preset_11.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Plasma Wave.json": {
+            "Preset_10.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Ionosphere Pulse.json": {
+            "Preset_9.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Ghostly Resonance.json": {
+            "Preset_8.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Ethereal Bloom.json": {
+            "Preset_7.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Chromatic Shift.json": {
+            "Preset_5.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Celestial Choir.json": {
+            "Preset_4.json": {
                 "kind": "json",
                 "local": 1
             },
-            "Aurora Veil.json": {
+            "Preset_2.json": {
                 "kind": "json",
                 "local": 1
             }
