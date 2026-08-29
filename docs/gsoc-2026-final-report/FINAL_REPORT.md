@@ -86,8 +86,7 @@ The toolkit is functional, while multidimensional `Pitch × Parameter` reconstru
 ### Master Integration — GestureCap Expressive Instrument
 
 **Repository:** [mikaelmolliex/gesturecap-expressive-instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument)  
-**Release:** [v0.1.0 — GSoC 2026 Experimental
-Integration](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/releases/tag/v0.1.0)
+**Pre-release:** [v0.1.0 — GSoC 2026 Contribution Snapshot](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/releases/tag/v0.1.0)
 
 This repository is the central GSoC submission and the point where Parts A and B are assembled into an experimental complete system:
 
@@ -108,6 +107,14 @@ Gen~ / Wavetable Engine
         ↓
 Expressive Instrument
 ```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mikaelmolliex/gesturecap-expressive-instrument/v0.1.0/docs/gsoc-2026-final-report/assets/gesturecap-expressive-instrument-UI.png" alt="GestureCap Expressive Instrument master interface" width="900">
+</p>
+
+<p align="center"><em>Master integration interface: live hand visualization, OSC routing, preset management, gesture mapping, and expressive instrument controls.</em></p>
+
+The `v0.1.0` pre-release preserves the master integration as completed at the end of the GSoC 2026 coding period. Development and refinement continue on the repository's `main` branch after this snapshot.
 
 Its central contribution is the reusable mapping layer between incoming OSC data and synthesis. The current instrument supports direct landmark mappings and provides the integration boundary for higher-level gesture states, clusters, confidence values, and motion features. That boundary is implemented at the OSC and routing level, but the musical behaviour of the higher-level inputs has not yet been fully validated.
 
@@ -133,7 +140,7 @@ This modular separation allows both sides to be developed and tested independent
 | --- | --- | --- | --- |
 | [Part A — GestureCap OSC](https://github.com/mikaelmolliex/gesturecap-osc) | MediaPipe → OSC → Max/MSP | [v0.1.0](https://github.com/mikaelmolliex/gesturecap-osc/releases/tag/v0.1.0) | Functional release |
 | [Part B — Wavetable Reconstruction](https://github.com/mikaelmolliex/wavetable-reconstruction) | Recordings → analysis → wavetables → Gen~ | [v0.1.0](https://github.com/mikaelmolliex/wavetable-reconstruction/releases/tag/v0.1.0) | Functional release |
-| [Master — Expressive Instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument) | OSC → mapping → synthesis → instrument | [v0.1.0](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/releases/tag/v0.1.0)| Experimental integration |
+| [Master — Expressive Instrument](https://github.com/mikaelmolliex/gesturecap-expressive-instrument) | OSC → mapping → synthesis → instrument | [v0.1.0 pre-release](https://github.com/mikaelmolliex/gesturecap-expressive-instrument/releases/tag/v0.1.0) | Experimental integration |
 
 The repositories are separated so that each component remains reusable and can maintain its own installation, build, and technical documentation. The master repository README acts as the current project overview, while this document preserves the historical GSoC report.
 
