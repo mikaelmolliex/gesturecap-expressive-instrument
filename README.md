@@ -106,6 +106,19 @@ The simulator sends complete 21-landmark hands to:
 
 The normalized musical controls are embedded in the landmark data: right thumb-tip Z carries logarithmic pitch, and left wrist Y carries gain. The virtual performer does not output MIDI and does not require MediaPipe.
 
+### OSC ports
+
+The instrument uses separate local UDP ports for its two input pipelines:
+
+| Input pipeline | Address | Port |
+|---|---|---:|
+| GestureCap live tracker | `127.0.0.1` | `11111` |
+| MusicXML Virtual Performer | `127.0.0.1` | `11112` |
+
+Selecting an input pipeline in the **Params** panel automatically configures the corresponding port. If no landmarks appear in Max, verify the selected pipeline, address, and port in the panel.
+
+Preset 1 is configured for the MusicXML Virtual Performer and therefore uses port `11112`.
+
 ## Current Capabilities
 
 - launch a self-contained MediaPipe tracker directly from Max/MSP;
